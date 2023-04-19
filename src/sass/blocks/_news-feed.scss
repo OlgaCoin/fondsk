@@ -1,0 +1,39 @@
+.news-feed {
+	&__item {
+		min-height: 530px;
+		padding-bottom: 20px;
+	}
+	&__meta {
+		margin-bottom: 5px;
+	}
+	&__img {
+		display: block;
+		overflow: hidden;
+		margin-bottom: 12px;
+		border-radius: $radius_sm;
+		height: 246px;
+		width: 100%;
+		& img {
+			display: block;
+			min-width: 100%;
+			height: 100%;			
+			transition: all 0.8s linear;
+			&:hover {
+				transform:scale(1.1);
+			}
+		}
+	}
+	&__header {
+		margin-bottom: 20px;
+		& > a {
+			display: block;
+			transition: $trans;
+			&:hover {
+				color: $primary;
+			}
+		}
+	}
+	&__descr {
+		@include article;
+	}
+}

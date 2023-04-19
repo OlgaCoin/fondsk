@@ -1,0 +1,75 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+@import 'base/variables';
+@import 'base/mixins';
+
+/* Default styles */
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+body {
+	margin: 0;
+	background-color: $white;
+	color: $t_dark;
+	font-weight: 400;
+	font-family: $f_serif;
+	font-size: 17px;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+button, button:active, button:focus {
+	border: none;
+	outline: none;
+}
+a, a:hover {
+	text-decoration: none;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+hr {
+	margin-bottom: 25px;
+	border-top: 1px solid $outline;
+}
+p {
+	font-family: $f_serif;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 27px;
+	color: $t_dark;
+}
+
+.page {
+	height: 100vh;
+	// display: flex;
+	// flex-direction: column;
+}
+.content {
+	// flex: 1;
+	padding: 40px 0 80px;
+	&__top {
+		margin-bottom: 60px;
+	}
+}
+
+/* Blocks */
+
+@import "blocks/header";
+@import "blocks/forms";
+@import "blocks/titles";
+@import "blocks/social";
+@import "blocks/slider";
+@import "blocks/meta";
+@import "blocks/news-block";
+@import "blocks/news-feed";
+@import "blocks/banners";
+@import "blocks/load-more";
+@import "blocks/footer";
+@import "blocks/media";

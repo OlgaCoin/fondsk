@@ -1,0 +1,47 @@
+.social {
+	display: flex;
+	justify-content: end;
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-left: 19px;
+		background-color: $primary;
+		border-radius: $radius;
+		width: 39px;
+		height: 39px;
+		transition: opacity .3s linear;
+		&:hover {
+			opacity: .9;
+		}
+	}
+	&__icon {
+		fill: $white;
+		&--tg {
+			width: 21px;
+			height: 18px;
+		}
+		&--vk {
+			width: 26px;
+			height: 17px;
+		}
+		&--ok {
+			width: 12px;
+			height: 20px;
+		}
+		&--rss {
+			width: 19px;
+			height: 19px;
+		}
+	}
+	&--bottom {
+		justify-content: start;
+		&__link {
+			margin-left: 0;
+			margin-right: 19px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}

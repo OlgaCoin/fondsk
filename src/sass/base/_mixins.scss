@@ -1,0 +1,74 @@
+@mixin h-2 {
+	font-family: $f_sans;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 27px;
+	line-height: 31px;
+	color: $t_dark;
+}
+
+@mixin h-3 {
+	font-family: $f_sans;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 26px;
+	color: $t_dark;
+}
+
+@mixin link {
+	font-family: $f_sans;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 27px;
+	color: $t_dark;
+}
+
+@mixin link-caps {
+	font-family: $f_sans;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 20px;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: $t_dark;
+}
+
+@mixin link-caps-sm {
+	font-family: $f_sans;
+	font-weight: 700;
+	font-size: 15px;
+	line-height: 24px;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: $t_dark;
+}
+
+@mixin article {
+	font-family: $f_serif;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 27px;
+	color: $t_dark;
+}
+
+@mixin meta {
+	font-family: $f_sans;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: $t_gray;
+}
+
+@mixin caption {
+	font-family: $f_sans;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 17px;
+	color: $t_caption;
+	text-transform: none;
+}
+
+

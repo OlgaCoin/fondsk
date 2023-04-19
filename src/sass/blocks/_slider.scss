@@ -1,0 +1,132 @@
+.top-slider {
+	position: relative;
+	min-height: 100%;
+	&--for {
+		overflow: hidden;
+		position: relative;
+		z-index: -1;
+	}
+	&__img {
+		& > img {
+			max-height: 560px;
+			width: auto;
+		}
+	}
+	&--nav {
+		position: absolute;
+		top: 45%;
+		left: 80px;
+		right: 80px;
+		z-index: 10;
+		overflow: hidden;
+		border-radius: $radius_sm;
+		transition: $trans;
+	}
+	&__card {
+		position: relative;
+		min-height: 300px;
+		box-sizing: border-box;
+		padding: 24px 40px 74px;
+		background-color: #F3F1EC;
+		z-index: 15;
+		// cursor: pointer;
+		& .num-block {
+			position: absolute;
+			right: 16px;
+			top: -10px;
+			z-index: -1;
+		}
+		& .num-block, & .num {
+			font-family: $f_sans;
+			font-weight: 700;
+			font-size: 150px;
+			line-height: 150px;
+			color: $white;
+			transition: $trans;
+		}
+	}
+	&__meta {
+		margin-bottom: 10px;
+	}
+	&__header > a {
+		display: block;
+		font-family: $f_sans;
+		font-weight: 800;
+		font-size: 41px;
+		line-height: 46px;
+		color: $t_dark;
+		margin-bottom: 30px;
+		transition: $trans;
+		&:hover {
+			color: darken($primary, 7%);
+		}
+	}
+	&__descr {
+		font-family: $f_serif;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 30px;
+		color: $t_dark;
+	}
+}
+.slick-track {
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+.slick-prev, .slick-next {
+	width: 70px;
+	height: 45px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border: none;
+	background-color: $primary;
+	transition: $trans;
+	z-index: 15;
+	&:focus, &:active {
+		border: none;
+	}
+	&:hover {
+		opacity: .9;
+	}
+}
+.slick-prev {	
+	right: 70px;
+	background-color: $white;
+}
+
+.slick-dots {
+	bottom: 25px;
+	left: 40px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	z-index: 15;
+	& li {
+		display: inline-block;
+		margin-right: 12px;
+		& button {
+		background-color: $t_dark;
+		border: none;
+		color: transparent;
+		font-size: 0;
+		outline: none;
+		padding: 0;
+		height: 5px;
+		width: 5px;
+		transition: $trans;
+		border-radius: 50%;
+		}
+		&:hover button, &.slick-active button {
+			width: 11px;
+			height: 11px;
+			background-color: $primary;
+		}
+	}
+}
+
+
+
+

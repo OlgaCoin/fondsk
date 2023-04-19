@@ -1,0 +1,130 @@
+.footer {
+	padding: 45px 20px 35px;
+	border-top: $border;
+	&__top {
+		margin-bottom: 20px;
+	}
+	&__mid {
+		margin-bottom: 40px;
+		& .row--end {
+			align-items: end;
+		}
+	}
+	&__bottom {
+		& p {
+			font-family: 'Exo 2';
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 17px;
+			color: #474747;
+		}
+		& .copyright {
+			font-family: 'Exo 2';
+			font-weight: 500;
+			font-size: 13px;
+			line-height: 18px;
+			color: #474747;
+		}
+	}
+	&__menu {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		& li {
+			margin-right: 20px;
+			@include link-caps-sm;
+			&:last-child {
+				margin-right: 0;
+			}
+			& > a {
+				display: block;
+				color: $t_dark;
+				transition: $trans;
+				&:hover {
+					color: $primary;
+				}
+			}
+		}
+	}
+	&__logo {
+		display: block;
+		& img {
+			max-width: 100%;
+		}
+	}
+	& .menu--sm {
+		display: flex;
+		justify-content: start;
+		align-items: end;
+		& li {
+			font-family: $f_sans;
+			font-weight: 600;
+			font-size: 15px;
+			line-height: 18px;
+			margin-right: 20px;
+			&:last-child {
+				margin-right: 0;				
+			}
+			& > a {
+				display: block;
+				color: $t_dark;
+				transition: $trans;
+				&:hover {
+					color: $primary;
+				}
+			}
+		}
+	}
+}
+
+.age {
+	display: inline-block;
+	font-family: 'Exo 2';
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 27px;
+	text-align: center;
+	letter-spacing: 0.01em;
+	text-transform: uppercase;
+	color: #CA4244;
+	padding: 7px 11px;
+	border: 1px solid $primary;
+	border-radius: $radius_sm;
+}
+.info {
+	text-align: right;
+	line-height: 20px;
+	font-family: 'Exo 2';
+	font-weight: 500;
+	font-size: 13px;
+	color: #383838;
+}
+
+.toTop {
+	display: none;
+	cursor: pointer;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border-radius: $radius;
+	background-color: $primary;
+	position: fixed;
+	bottom: 90px;
+	right: 50px;
+	z-index: 600;
+	opacity: .8;
+	transition: all .3s;
+	&:hover {
+		opacity: 1;
+	}
+	&.show {
+		display: flex;
+	}
+	&__icon {
+		display: block;
+		width: 24px;
+		height: 24px;
+		fill: $white;
+	}
+}

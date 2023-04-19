@@ -1,0 +1,125 @@
+.search-form {
+	position: relative;
+	width: auto;
+	&__input {
+		width: 300px;
+		height: 50px;
+		padding: 0 48px 0 26px;
+		font-family: $f_sans;
+		font-size: 16px;
+		line-height: 50px;
+		color: $t_dark;
+		background: $white;		
+		border: $border;
+		border-radius: $radius;	
+		outline: none;	
+		transition: all .3s ease 0ms;
+		&:focus {
+			width: 360px;
+		}
+	}
+	&__submit {
+		position: absolute;
+		width: 42px;
+		height: 42px;
+		top: 4px;
+		right: 6px;
+		background: none;
+		border: none;
+		outline: none;
+	}
+	&__icon {
+		text-align: center;
+		width: 22px;
+		height: 23px;
+		fill: $t_dark;
+	}
+}
+.footer__search {
+	& .search-form {
+		width: 100%;
+		&__input {
+			width: 100%;
+			&:focus {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.ss-form {
+	text-align: center;
+	border: $border;
+	border-radius: $radius_sm;
+	padding: 44px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	&__header {
+		margin-bottom: 50px;
+	}
+	&__input {
+		height: 50px;
+		padding: 0 48px 0 26px;
+		font-family: $f_sans;
+		font-size: 16px;
+		line-height: 50px;
+		color: $t_dark;
+		background: $white;		
+		border: $border;
+		border-radius: $radius;	
+		outline: none;	
+		transition: all .3s ease 0ms;
+		margin-bottom: 36px;
+	}
+	&__submit {
+		width: 217px;
+		height: 60px;
+		background-color: $primary;
+		border: none;
+		border-radius: 8px;
+		outline: none;
+		text-align: center;
+		@include link-caps-sm;
+		font-weight: 600;
+		color: $white;
+		transition: $trans;
+		&:hover {
+			background-color: darken($primary, 7%);
+			box-shadow: 0px 4px 20px 2px rgba(241, 93, 96, 0.5);
+		}
+		&:active {
+			background-color: #B1292B;
+		}
+	}
+	&__agree {
+		display: flex;
+		align-items: start;
+		justify-content: space-between;
+		font-family: $f_sans;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 17px;
+		color: $t_light;
+		text-align: left;	
+		margin-bottom: 20px;
+		max-width: 280px;
+		& input {
+			margin-top: 5px;
+		}	
+		& label {
+			padding-left: 20px;
+			margin: 0;
+		}
+		& a {
+			transition: $trans;
+			color: $t_light;
+			&:hover {
+				text-decoration: underline;
+				color: #616161
+			}
+		}
+	}
+
+}

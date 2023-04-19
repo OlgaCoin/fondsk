@@ -1,0 +1,81 @@
+.meta {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	@include meta;
+	& a {
+		color: $t_gray;
+		transition: color .3s;
+		&:hover {
+			color: $blue;
+		}
+	}
+	&__item {
+		margin-right: 23px;
+		position: relative;
+		& .caption {
+			@include caption;
+		}
+		&.data {
+			line-height: 28px;
+		}
+		&.tag, &.views {
+			padding-left: 20px;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+		&.tag:before, &.views:before {
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			width: 15px;
+			height: 15px;
+			display: block;
+		}
+		&.tag:before {
+			background: url('../icons/meta/icon_tags.svg') center center/cover no-repeat;
+		}
+		&.views:before {
+			background: url('../icons/meta/icon_eye.svg') center center/cover no-repeat;
+		}
+	}
+	&__img {
+		display: block;
+		border-radius: $radius;
+		height: 56px;
+		width: 56px;
+		&--left {
+			margin-right: 26px;
+		}
+	}
+	&--mb {
+		margin-bottom: 12px;
+	}
+}
+.label {
+	color: $primary;
+	border: 1px solid $primary;
+	padding: 0 7px;
+	line-height: 26px;
+	border-radius: $radius_sm;
+	margin-right: 16px;
+	&--orange {
+		border-color: $orange;
+		color: $orange;
+		position: relative;
+		padding: 0 22px 0 8px;
+		line-height: 23px;
+		margin-right: 10px;
+		&:after {
+			position: absolute;
+			content: '';
+			background: url('../icons/meta/lightning.svg') center center/cover no-repeat;
+			width: 10px;
+			height: 14px;
+			top: 5px;
+			right: 7px;
+		}
+	}
+}
