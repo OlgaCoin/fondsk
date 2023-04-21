@@ -69,7 +69,6 @@
 				d="M17,13.41,12.71,9.17a1,1,0,0,0-1.42,0L7.05,13.41a1,1,0,0,0,0,1.42,1,1,0,0,0,1.41,0L12,11.29l3.54,3.54a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29A1,1,0,0,0,17,13.41Z" />
 		</symbol>
 	</svg>
-
 	<!-- /svg-sprite -->
 
 	<div class="page">
@@ -78,12 +77,12 @@
 			<div class="header__top">
 				<div class="container">
 					<div class="row">
-						<div class="col-xl-3 col-lg-4 col-md-4">
+						<div class="col-xl-3 col-lg-4 col-md-6 col-sm-7">
 							<a class="header__logo" href="index.html">
 								<img src="img/logo/logo_top.svg" alt="logo">
 							</a>
 						</div>
-						<div class="col-xl-6 col-lg-5 col-md-4">
+						<div class="col-xl-6 col-lg-5 d-md-none d-sm-none d-none d-lg-block">
 							<div class="header__search search">
 								<form class="search-form" action="/search" method="get">
 									<input type="text" placeholder="Поиск" class="search-form__input" name="q">
@@ -95,7 +94,7 @@
 								</form>
 							</div>
 						</div>
-						<div class="col-xl-3 col-lg-3 col-md-4">
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-5">
 							<div class="social">
 								<a class="social__link" href="https://t.me/fsk_today" target="_blank">
 									<svg class="social__icon social__icon--tg">
@@ -116,81 +115,138 @@
 								</a>
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</div>
 
 			<nav class="header__nav">
 				<div class="container">
-					<ul class="header__menu">
-						<li>
-							<a href="#" class="header__menu-item">КОНКУРС</a>
-						</li>
-						<li class="drop-down">
-							<a href="#" class="header__menu-item">ТЕМЫ +</a>
-							<div class="header__submenu">
-								<div class="container">
-									<div class="row">
-										<div class="col-xl-3 col-lg-4">
-											<ul>
-												<li><a href="#" class="header__submenu-item">Балканский излом</a></li>
-												<li><a href="#" class="header__submenu-item">Будущее Белоруссии</a></li>
-												<li><a href="#" class="header__submenu-item">Ближневосточный Узел</a></li>
-											</ul>
-										</div>
-										<div class="col-xl-3 col-lg-4">
-											<ul>
-												<li><a href="#" class="header__submenu-item">Кавказ</a></li>
-												<li><a href="#" class="header__submenu-item">Великая победа</a></li>
-												<li><a href="#" class="header__submenu-item">Кризис в Европе</a></li>
-											</ul>
-										</div>
-										<div class="col-xl-3 col-lg-4">
-											<ul>
-												<li><a href="#" class="header__submenu-item">Оборона и безопастность</a></li>
-												<li><a href="#" class="header__submenu-item">Православие</a></li>
-												<li><a href="#" class="header__submenu-item">США: бизнес и политика</a></li>
-											</ul>
-										</div>
-										<div class="col-xl-3 col-lg-4">
-											<ul>
-												<li><a href="#" class="header__submenu-item">Украсина и Донбасс</a></li>
-												<li><a href="#" class="header__submenu-item">Энергетика</a></li>
-											</ul>
+					<div class="mobile-wrapper">
+						<a class="header__logo--mobile" href="index.html">
+							<img src="img/logo/logo_top.svg" alt="logo">
+						</a>
+
+						<ul class="header__menu">
+							<li>
+								<a href="#" class="header__menu-item">КОНКУРС</a>
+							</li>
+							<li class="drop-down">
+								<a href="#" class="header__menu-item">ТЕМЫ +</a>
+								<div class="header__submenu">
+									<div class="container">
+										<div class="row">
+											<div class="col-xl-3 col-lg-3 col-md-6">
+												<ul>
+													<li><a href="#" class="header__submenu-item">Балканский излом</a></li>
+													<li><a href="#" class="header__submenu-item">Будущее Белоруссии</a></li>
+													<li><a href="#" class="header__submenu-item">Ближневосточный Узел</a></li>
+												</ul>
+											</div>
+											<div class="col-xl-3 col-lg-3 col-md-6">
+												<ul>
+													<li><a href="#" class="header__submenu-item">Кавказ</a></li>
+													<li><a href="#" class="header__submenu-item">Великая победа</a></li>
+													<li><a href="#" class="header__submenu-item">Кризис в Европе</a></li>
+												</ul>
+											</div>
+											<div class="col-xl-3 col-lg-3 col-md-6">
+												<ul>
+													<li><a href="#" class="header__submenu-item">Оборона и безопастность</a></li>
+													<li><a href="#" class="header__submenu-item">Православие</a></li>
+													<li><a href="#" class="header__submenu-item">США: бизнес и политика</a></li>
+												</ul>
+											</div>
+											<div class="col-xl-3 col-lg-3 col-md-6">
+												<ul>
+													<li><a href="#" class="header__submenu-item">Украсина и Донбасс</a></li>
+													<li><a href="#" class="header__submenu-item">Энергетика</a></li>
+												</ul>
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-						</li>
-						<li class="drop-down">
-							<a href="#" class="header__menu-item">РЕГИОНЫ +</a>
-						</li>
-						<li>
-							<a href="#" class="header__menu-item">НОВОСТИ</a>
-						</li>
-						<li>
-							<a href="#" class="header__menu-item">ПОЛИТИКА</a>
-						</li>
-						<li>
-							<a href="#" class="header__menu-item">ЭКОНОМИКА</a>
-						</li>
-						<li>
-							<a href="#" class="header__menu-item">КУЛЬТУРА</a>
-						</li>
-						<li>
-							<a href="#" class="header__menu-item">МНЕНИЕ</a>
-						</li>
-					</ul>
+							</li>
+							<li class="drop-down">
+								<a href="#" class="header__menu-item">РЕГИОНЫ +</a>
+							</li>
+							<li>
+								<a href="#" class="header__menu-item">НОВОСТИ</a>
+							</li>
+							<li>
+								<a href="#" class="header__menu-item">ПОЛИТИКА</a>
+							</li>
+							<li>
+								<a href="#" class="header__menu-item">ЭКОНОМИКА</a>
+							</li>
+							<li>
+								<a href="#" class="header__menu-item">КУЛЬТУРА</a>
+							</li>
+							<li>
+								<a href="#" class="header__menu-item">МНЕНИЕ</a>
+							</li>
+						</ul>
+
+						<div class="btn-menu" title="Меню">
+							<div class="btn-row"></div>
+							<div class="btn-row"></div>
+							<div class="btn-row"></div>
+						</div>
+					</div>
+
 				</div>
 			</nav>
+
+			<nav class="mobile-nav">
+				<ul class="mobile__menu">
+					<li>
+						<a href="#" class="mobile__menu-item">КОНКУРС</a>
+					</li>
+					<li class="drop-down">
+						<a href="#" class="mobile__menu-item">ТЕМЫ +</a>
+
+						<ul class="mobile__submenu">
+							<li><a href="#" class="mobile__submenu-item">Балканский излом</a></li>
+							<li><a href="#" class="mobile__submenu-item">Будущее Белоруссии</a></li>
+							<li><a href="#" class="mobile__submenu-item">Ближневосточный Узел</a></li>
+							<li><a href="#" class="mobile__submenu-item">Кавказ</a></li>
+							<li><a href="#" class="mobile__submenu-item">Великая победа</a></li>
+							<li><a href="#" class="mobile__submenu-item">Кризис в Европе</a></li>
+							<li><a href="#" class="mobile__submenu-item">Оборона и безопастность</a></li>
+							<li><a href="#" class="mobile__submenu-item">Православие</a></li>
+							<li><a href="#" class="mobile__submenu-item">США: бизнес и политика</a></li>
+							<li><a href="#" class="mobile__submenu-item">Украсина и Донбасс</a></li>
+							<li><a href="#" class="mobile__submenu-item">Энергетика</a></li>
+						</ul>
+
+					</li>
+					<li>
+						<a href="#" class="mobile__menu-item">РЕГИОНЫ</a>
+					</li>
+					<li>
+						<a href="#" class="mobile__menu-item">НОВОСТИ</a>
+					</li>
+					<li>
+						<a href="#" class="mobile__menu-item">ПОЛИТИКА</a>
+					</li>
+					<li>
+						<a href="#" class="mobile__menu-item">ЭКОНОМИКА</a>
+					</li>
+					<li>
+						<a href="#" class="mobile__menu-item">КУЛЬТУРА</a>
+					</li>
+					<li>
+						<a href="#" class="mobile__menu-item">МНЕНИЕ</a>
+					</li>
+				</ul>
+			</nav>
 		</header>
+
 
 		<section class="content">
 			<div class="content__top">
 				<div class="container">
 					<div class="row">
-						<div class="col-xl-8">
+						<div class="col-xl-8 col-lg-12">
 
 							<div class="top-slider">
 								<div class="top-slider--for">
@@ -305,56 +361,58 @@
 						</div>
 						<!-- /slider -->
 
-						<div class="col-xl-4">
+						<div class="col-xl-4 col-lg-12">
 							<aside class="top-aside">
 
 								<div class="news-block">
-									<a href="#" class="label-link">читают прямо сейчас</a>
-									<div class="news-block__content">
+									<div class="news-block__wrapper">
+										<a href="#" class="label-link">читают прямо сейчас</a>
+										<div class="news-block__content">
 
-										<div class="news-block__item">
-											<div class="meta news-block__meta">
-												<span class="data meta__item">13.04.2023 | <a href="#">игорь логинов</a> </span>
+											<div class="news-block__item">
+												<div class="meta news-block__meta">
+													<span class="data meta__item">13.04.2023 | <a href="#">игорь логинов</a> </span>
+												</div>
+												<h3 class="news-block__header"><a href="#">Сербия прощается с Россией</a></h3>
 											</div>
-											<h3 class="news-block__header"><a href="#">Сербия прощается с Россией</a></h3>
-										</div>
 
-										<div class="news-block__item">
-											<div class="meta news-block__meta">
-												<span class="data meta__item">09.02.2023 | <a href="#">игорь логинов</a> </span>
+											<div class="news-block__item">
+												<div class="meta news-block__meta">
+													<span class="data meta__item">09.02.2023 | <a href="#">игорь логинов</a> </span>
+												</div>
+												<h3 class="news-block__header"><a href="#">Высотные аэростаты над Украиной рассеют
+														туман войны</a></h3>
 											</div>
-											<h3 class="news-block__header"><a href="#">Высотные аэростаты над Украиной рассеют
-													туман войны</a></h3>
-										</div>
 
-										<div class="news-block__item">
-											<div class="meta news-block__meta">
-												<div class="label label--orange">молния</div>
-												<span class="data meta__item">13.04.2023 | <a href="#">игорь логинов</a> </span>
+											<div class="news-block__item">
+												<div class="meta news-block__meta">
+													<div class="label label--orange">молния</div>
+													<span class="data meta__item">13.04.2023 | <a href="#">игорь логинов</a> </span>
+												</div>
+												<h3 class="news-block__header"><a href="#">Как Киев смягчает последствия ударов по
+														инфраструктуре</a></h3>
 											</div>
-											<h3 class="news-block__header"><a href="#">Как Киев смягчает последствия ударов по
-													инфраструктуре</a></h3>
+											<hr>
+											<ul class="news-block__list">
+												<li>
+													<a href="#">Китай показал миру, что Америка вздрогнула</a>
+												</li>
+												<li>
+													<a href="#">Немецкая «ливерная колбаса» в большом спросе</a>
+												</li>
+												<li>
+													<a href="#">Центробанки мира готовятся к гигантскому финансовому апокалипсису</a>
+												</li>
+												<li>
+													<a href="#">Немецкая «ливерная колбаса» в большом спросе</a>
+												</li>
+											</ul>
 										</div>
-										<hr>
-										<ul class="news-block__list">
-											<li>
-												<a href="#">Китай показал миру, что Америка вздрогнула</a>
-											</li>
-											<li>
-												<a href="#">Немецкая «ливерная колбаса» в большом спросе</a>
-											</li>
-											<li>
-												<a href="#">Центробанки мира готовятся к гигантскому финансовому апокалипсису</a>
-											</li>
-											<li>
-												<a href="#">Немецкая «ливерная колбаса» в большом спросе</a>
-											</li>
-										</ul>
 									</div>
 								</div>
-
 							</aside>
 							<!-- /top-news -->
+
 						</div>
 					</div>
 				</div>
@@ -367,7 +425,7 @@
 						<div class="row">
 
 							<!-- article -->
-							<div class="col-xl-4">
+							<div class="col-xl-4 col-lg-6 col-md-6">
 								<article class="news-feed__item">
 									<a href="#" class="news-feed__img">
 										<img src="img/news_cards/card.jpg" alt="photo">
@@ -386,7 +444,7 @@
 							<!-- /article -->
 
 							<!-- article -->
-							<div class="col-xl-4">
+							<div class="col-xl-4 col-lg-6 col-md-6">
 								<article class="news-feed__item">
 									<a href="#" class="news-feed__img">
 										<img src="img/news_cards/card-1.jpg" alt="photo">
@@ -405,7 +463,7 @@
 							<!-- /article -->
 
 							<!-- article -->
-							<div class="col-xl-4">
+							<div class="col-xl-4 col-lg-6 col-md-6">
 								<article class="news-feed__item">
 									<a href="#" class="news-feed__img">
 										<img src="img/news_cards/card-2.jpg" alt="photo">
@@ -424,7 +482,7 @@
 							<!-- /article -->
 
 							<!-- article -->
-							<div class="col-xl-4">
+							<div class="col-xl-4 col-lg-6 col-md-6">
 								<article class="news-feed__item">
 									<a href="#" class="news-feed__img">
 										<img src="img/news_cards/card-3.jpg" alt="photo">
@@ -443,7 +501,7 @@
 							<!-- /article -->
 
 							<!-- article -->
-							<div class="col-xl-4">
+							<div class="col-xl-4 col-lg-6 col-md-6">
 								<article class="news-feed__item">
 									<a href="#" class="news-feed__img">
 										<img src="img/news_cards/card-4.jpg" alt="photo">
@@ -462,7 +520,7 @@
 							<!-- /article -->
 
 							<!-- article -->
-							<div class="col-xl-4">
+							<div class="col-xl-4 col-lg-6 col-md-6">
 								<article class="news-feed__item">
 									<a href="#" class="news-feed__img">
 										<img src="img/news_cards/card-5.jpg" alt="photo">
@@ -493,7 +551,6 @@
 												<span class="data meta__item">09.02.2023 | <a href="#">ВАЛЕРИЙ БУРТ</a>
 													<span class="caption">Журналист, историк</span>
 												</span>
-
 											</div>
 											<h2 class="news-block__header"><a href="#">«Это не наша война!»</a></h2>
 											<p>Польша — возмутитель спокойствия в Старом Свете со старыми повадками
@@ -546,7 +603,7 @@
 						<div class="row">
 
 							<!-- article -->
-							<div class="col-xl-4">
+							<div class="col-xl-4 col-lg-6 col-md-6">
 								<article class="news-feed__item">
 									<a href="#" class="news-feed__img">
 										<img src="img/news_cards/card-6.jpg" alt="photo">
@@ -564,7 +621,7 @@
 							<!-- /article -->
 
 							<!-- article -->
-							<div class="col-xl-4">
+							<div class="col-xl-4 col-lg-6 col-md-6">
 								<article class="news-feed__item">
 									<a href="#" class="news-feed__img">
 										<img src="img/news_cards/card-7.jpg" alt="photo">
@@ -582,7 +639,7 @@
 							<!-- /article -->
 
 							<!-- article -->
-							<div class="col-xl-4">
+							<div class="col-xl-4 col-lg-6 col-md-6">
 								<article class="news-feed__item">
 									<a href="#" class="news-feed__img">
 										<img src="img/news_cards/card.jpg" alt="photo">
@@ -600,121 +657,131 @@
 							<!-- /article -->
 						</div>
 
+						<!-- <div class="clearfix"></div> -->
+
 						<!-- category-col4 -->
 						<div class="news-block cat cat--col4">
-							<div class="row">
+							<div class="row row--col4">
 
-								<div class="col-xl-4">
-									<a href="#" class="label-link">события</a>
+								<div class="col-xl-4 col-lg-4 col-md-6">
+									<div class="news-block__wrapper">
+										<a href="#" class="label-link">события</a>
 
-									<div class="news-block__content">
+										<div class="news-block__content">
 
-										<article class="news-block__item">
-											<a href="#" class="news-block__img news-block__img--sm">
-												<img src="img/news_cards/mini/photo.jpg" alt="photo">
-											</a>
-											<div class="meta news-block__meta">
-												<span class="data meta__item">07.02.2023 | <a href="#">ОБЗОР СОБЫТИЙ</a> </span>
+											<article class="news-block__item">
+												<a href="#" class="news-block__img news-block__img--sm">
+													<img src="img/news_cards/mini/photo.jpg" alt="photo">
+												</a>
+												<div class="meta news-block__meta">
+													<span class="data meta__item">07.02.2023 | <a href="#">ОБЗОР СОБЫТИЙ</a> </span>
+												</div>
+												<h2 class="news-block__header">
+													<a href="#">Министерству обороны Польши не хватает женщин</a>
+												</h2>
+												<p class="news-block__descr">Минобороны Польши обратилось в министерство образования
+													по поводу призыва в армию женщин с...</p>
+											</article>
+
+											<div class="news-block__item">
+												<div class="meta news-block__meta">
+													<span class="data meta__item">13.04.2023 | <a href="#">ОБЗОР СОБЫТИЙ</a> </span>
+												</div>
+												<h3 class="news-block__header"><a href="#">Global Times: передача конфискованных
+														активов россиян Украине нанесёт тяжёлый удар по «долларовой гегемонии»</a>
+												</h3>
 											</div>
-											<h2 class="news-block__header">
-												<a href="#">Министерству обороны Польши не хватает женщин</a>
-											</h2>
-											<p class="news-block__descr">Минобороны Польши обратилось в министерство образования
-												по поводу призыва в армию женщин с...</p>
-										</article>
 
-										<div class="news-block__item">
-											<div class="meta news-block__meta">
-												<span class="data meta__item">13.04.2023 | <a href="#">ОБЗОР СОБЫТИЙ</a> </span>
+											<div class="news-block__item">
+												<div class="meta news-block__meta">
+													<span class="data meta__item">09.02.2023 | <a href="#">ОБЗОР СОБЫТИЙ</a> </span>
+												</div>
+												<h3 class="news-block__header"><a href="#">Специальная военная операция
+														ВС РФ и события
+														на Украине 9 февраля, день</a></h3>
 											</div>
-											<h3 class="news-block__header"><a href="#">Global Times: передача конфискованных
-													активов россиян Украине нанесёт тяжёлый удар по «долларовой гегемонии»</a></h3>
 										</div>
-
-										<div class="news-block__item">
-											<div class="meta news-block__meta">
-												<span class="data meta__item">09.02.2023 | <a href="#">ОБЗОР СОБЫТИЙ</a> </span>
-											</div>
-											<h3 class="news-block__header"><a href="#">Специальная военная операция ВС РФ и события
-													на Украине 9 февраля, день</a></h3>
-										</div>
-
 									</div>
 								</div>
 
-								<div class="col-xl-4">
-									<a href="#" class="label-link">культура</a>
+								<div class="col-xl-4 col-lg-4 col-md-6">
+									<div class="news-block__wrapper">
+										<a href="#" class="label-link">культура</a>
 
-									<div class="news-block__content">
+										<div class="news-block__content">
 
-										<article class="news-block__item">
-											<a href="#" class="news-block__img news-block__img--sm">
-												<img src="img/news_cards/mini/photo-1.jpg" alt="photo">
-											</a>
-											<div class="meta news-block__meta">
-												<span class="data meta__item">07.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+											<article class="news-block__item">
+												<a href="#" class="news-block__img news-block__img--sm">
+													<img src="img/news_cards/mini/photo-1.jpg" alt="photo">
+												</a>
+												<div class="meta news-block__meta">
+													<span class="data meta__item">07.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+												</div>
+												<h2 class="news-block__header">
+													<a href="#">Сталинград: «Будет здесь положено начало вражьего конца»</a>
+												</h2>
+												<p class="news-block__descr">Немецкое наступление продолжалось с 17 июля
+													по 18 ноября
+													1942 года. На Сталинград была брошена...</p>
+											</article>
+
+											<div class="news-block__item">
+												<div class="meta news-block__meta">
+													<span class="data meta__item">13.04.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+												</div>
+												<h3 class="news-block__header"><a href="#">Паулюс шёл на Восток, но сдался в плен
+														в Сталинграде</a></h3>
 											</div>
-											<h2 class="news-block__header">
-												<a href="#">Сталинград: «Будет здесь положено начало вражьего конца»</a>
-											</h2>
-											<p class="news-block__descr">Немецкое наступление продолжалось с 17 июля по 18 ноября
-												1942 года. На Сталинград была брошена...</p>
-										</article>
 
-										<div class="news-block__item">
-											<div class="meta news-block__meta">
-												<span class="data meta__item">13.04.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+											<div class="news-block__item">
+												<div class="meta news-block__meta">
+													<span class="data meta__item">09.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+												</div>
+												<h3 class="news-block__header"><a href="#">Как Колчак и Деникин воевали за интересы
+														коллективного Запада</a></h3>
 											</div>
-											<h3 class="news-block__header"><a href="#">Паулюс шёл на Восток, но сдался в плен
-													в Сталинграде</a></h3>
 										</div>
-
-										<div class="news-block__item">
-											<div class="meta news-block__meta">
-												<span class="data meta__item">09.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
-											</div>
-											<h3 class="news-block__header"><a href="#">Как Колчак и Деникин воевали за интересы
-													коллективного Запада</a></h3>
-										</div>
-
 									</div>
 								</div>
 
-								<div class="col-xl-4">
-									<a href="#" class="label-link">экономика</a>
+								<div class="col-xl-4 col-lg-4 col-md-6">
+									<div class="news-block__wrapper">
+										<a href="#" class="label-link">экономика</a>
 
-									<div class="news-block__content">
+										<div class="news-block__content">
 
-										<article class="news-block__item">
-											<a href="#" class="news-block__img news-block__img--sm">
-												<img src="img/news_cards/mini/photo-2.jpg" alt="photo">
-											</a>
-											<div class="meta news-block__meta">
-												<span class="data meta__item">07.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+											<article class="news-block__item">
+												<a href="#" class="news-block__img news-block__img--sm">
+													<img src="img/news_cards/mini/photo-2.jpg" alt="photo">
+												</a>
+												<div class="meta news-block__meta">
+													<span class="data meta__item">07.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+												</div>
+												<h2 class="news-block__header">
+													<a href="#">Золотовалютная ярмарка тщеславия</a>
+												</h2>
+												<p class="news-block__descr">Банк России ослабляет экономическую безопасность
+													страны.
+													С 1 апреля 2020 года он прекратил...</p>
+											</article>
+
+											<div class="news-block__item">
+												<div class="meta news-block__meta">
+													<span class="data meta__item">13.04.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+												</div>
+												<h3 class="news-block__header"><a href="#">Внешняя торговля России вернулась
+														на уровень
+														до 24 февраля 2022 года</a></h3>
 											</div>
-											<h2 class="news-block__header">
-												<a href="#">Золотовалютная ярмарка тщеславия</a>
-											</h2>
-											<p class="news-block__descr">Банк России ослабляет экономическую безопасность страны.
-												С 1 апреля 2020 года он прекратил...</p>
-										</article>
 
-										<div class="news-block__item">
-											<div class="meta news-block__meta">
-												<span class="data meta__item">13.04.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+											<div class="news-block__item">
+												<div class="meta news-block__meta">
+													<span class="data meta__item">09.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+												</div>
+												<h3 class="news-block__header"><a href="#">Центробанк продолжает высасывать денежные
+														соки из российской экономики</a></h3>
 											</div>
-											<h3 class="news-block__header"><a href="#">Внешняя торговля России вернулась на уровень
-													до 24 февраля 2022 года</a></h3>
 										</div>
-
-										<div class="news-block__item">
-											<div class="meta news-block__meta">
-												<span class="data meta__item">09.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
-											</div>
-											<h3 class="news-block__header"><a href="#">Центробанк продолжает высасывать денежные
-													соки из российской экономики</a></h3>
-										</div>
-
 									</div>
 								</div>
 
@@ -726,79 +793,85 @@
 						<div class="news-block cat cat--col6">
 							<div class="row">
 
-								<div class="col-xl-6">
-									<a href="#" class="label-link">события</a>
+								<div class="col-xl-6 col-lg-6">
+									<div class="news-block__wrapper">
+										<a href="#" class="label-link">события</a>
 
-									<div class="news-block__content">
+										<div class="news-block__content">
 
-										<article class="news-block__item">
-											<a href="#" class="news-block__img news-block__img--md">
-												<img src="img/news_cards/max/photo.jpg" alt="photo">
-											</a>
-											<div class="meta news-block__meta">
-												<span class="data meta__item">07.02.2023 | <a href="#">ОБЗОР СОБЫТИЙ</a> </span>
+											<article class="news-block__item">
+												<a href="#" class="news-block__img news-block__img--md">
+													<img src="img/news_cards/max/photo.jpg" alt="photo">
+												</a>
+												<div class="meta news-block__meta">
+													<span class="data meta__item">07.02.2023 | <a href="#">ОБЗОР СОБЫТИЙ</a> </span>
+												</div>
+												<h2 class="news-block__header">
+													<a href="#">Министерству обороны Польши не хватает женщин</a>
+												</h2>
+												<p class="news-block__descr">Минобороны Польши обратилось в министерство образования
+													по поводу призыва в армию женщин с...</p>
+											</article>
+
+											<div class="news-block__item">
+												<div class="meta news-block__meta">
+													<span class="data meta__item">13.04.2023 | <a href="#">ОБЗОР СОБЫТИЙ</a> </span>
+												</div>
+												<h3 class="news-block__header"><a href="#">Global Times: передача конфискованных
+														активов россиян Украине нанесёт тяжёлый удар по «долларовой гегемонии»</a>
+												</h3>
 											</div>
-											<h2 class="news-block__header">
-												<a href="#">Министерству обороны Польши не хватает женщин</a>
-											</h2>
-											<p class="news-block__descr">Минобороны Польши обратилось в министерство образования
-												по поводу призыва в армию женщин с...</p>
-										</article>
 
-										<div class="news-block__item">
-											<div class="meta news-block__meta">
-												<span class="data meta__item">13.04.2023 | <a href="#">ОБЗОР СОБЫТИЙ</a> </span>
+											<div class="news-block__item">
+												<div class="meta news-block__meta">
+													<span class="data meta__item">09.02.2023 | <a href="#">ОБЗОР СОБЫТИЙ</a> </span>
+												</div>
+												<h3 class="news-block__header"><a href="#">Специальная военная операция
+														ВС РФ и события
+														на Украине 9 февраля, день</a></h3>
 											</div>
-											<h3 class="news-block__header"><a href="#">Global Times: передача конфискованных
-													активов россиян Украине нанесёт тяжёлый удар по «долларовой гегемонии»</a></h3>
+
 										</div>
-
-										<div class="news-block__item">
-											<div class="meta news-block__meta">
-												<span class="data meta__item">09.02.2023 | <a href="#">ОБЗОР СОБЫТИЙ</a> </span>
-											</div>
-											<h3 class="news-block__header"><a href="#">Специальная военная операция ВС РФ и события
-													на Украине 9 февраля, день</a></h3>
-										</div>
-
 									</div>
 								</div>
 
-								<div class="col-xl-6">
-									<a href="#" class="label-link">культура</a>
+								<div class="col-xl-6 col-lg-6">
+									<div class="news-block__wrapper">
+										<a href="#" class="label-link">культура</a>
 
-									<div class="news-block__content">
+										<div class="news-block__content">
 
-										<article class="news-block__item">
-											<a href="#" class="news-block__img news-block__img--md">
-												<img src="img/news_cards/max/photo-1.jpg" alt="photo">
-											</a>
-											<div class="meta news-block__meta">
-												<span class="data meta__item">07.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+											<article class="news-block__item">
+												<a href="#" class="news-block__img news-block__img--md">
+													<img src="img/news_cards/max/photo-1.jpg" alt="photo">
+												</a>
+												<div class="meta news-block__meta">
+													<span class="data meta__item">07.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+												</div>
+												<h2 class="news-block__header">
+													<a href="#">Сталинград: «Будет здесь положено начало вражьего конца»</a>
+												</h2>
+												<p class="news-block__descr">Немецкое наступление продолжалось с 17 июля
+													по 18 ноября
+													1942 года. На Сталинград была брошена...</p>
+											</article>
+
+											<div class="news-block__item">
+												<div class="meta news-block__meta">
+													<span class="data meta__item">13.04.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+												</div>
+												<h3 class="news-block__header"><a href="#">Паулюс шёл на Восток, но сдался в плен
+														в Сталинграде</a></h3>
 											</div>
-											<h2 class="news-block__header">
-												<a href="#">Сталинград: «Будет здесь положено начало вражьего конца»</a>
-											</h2>
-											<p class="news-block__descr">Немецкое наступление продолжалось с 17 июля по 18 ноября
-												1942 года. На Сталинград была брошена...</p>
-										</article>
 
-										<div class="news-block__item">
-											<div class="meta news-block__meta">
-												<span class="data meta__item">13.04.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+											<div class="news-block__item">
+												<div class="meta news-block__meta">
+													<span class="data meta__item">09.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+												</div>
+												<h3 class="news-block__header"><a href="#">Как Колчак и Деникин воевали за интересы
+														коллективного Запада</a></h3>
 											</div>
-											<h3 class="news-block__header"><a href="#">Паулюс шёл на Восток, но сдался в плен
-													в Сталинграде</a></h3>
 										</div>
-
-										<div class="news-block__item">
-											<div class="meta news-block__meta">
-												<span class="data meta__item">09.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
-											</div>
-											<h3 class="news-block__header"><a href="#">Как Колчак и Деникин воевали за интересы
-													коллективного Запада</a></h3>
-										</div>
-
 									</div>
 								</div>
 							</div>
@@ -807,7 +880,7 @@
 
 						<div class="row">
 							<!-- article -->
-							<div class="col-xl-4">
+							<div class="col-xl-4 col-lg-6 col-md-6">
 								<article class="news-feed__item">
 									<a href="#" class="news-feed__img">
 										<img src="img/news_cards/card-1.jpg" alt="photo">
@@ -825,7 +898,7 @@
 							<!-- /article -->
 
 							<!-- article -->
-							<div class="col-xl-4">
+							<div class="col-xl-4 col-lg-6 col-md-6">
 								<article class="news-feed__item">
 									<a href="#" class="news-feed__img">
 										<img src="img/news_cards/card-2.jpg" alt="photo">
@@ -843,7 +916,7 @@
 							<!-- /article -->
 
 							<!-- article -->
-							<div class="col-xl-4">
+							<div class="col-xl-4 col-lg-6 col-md-6">
 								<article class="news-feed__item">
 									<a href="#" class="news-feed__img">
 										<img src="img/news_cards/card-3.jpg" alt="photo">
@@ -861,7 +934,7 @@
 							<!-- /article -->
 
 							<!-- article -->
-							<div class="col-xl-4">
+							<div class="col-xl-4 col-lg-6 col-md-6">
 								<article class="news-feed__item">
 									<a href="#" class="news-feed__img">
 										<img src="img/news_cards/card-4.jpg" alt="photo">
@@ -879,7 +952,7 @@
 							<!-- /article -->
 
 							<!-- article -->
-							<div class="col-xl-4">
+							<div class="col-xl-4 col-lg-6 col-md-6">
 								<article class="news-feed__item">
 									<a href="#" class="news-feed__img">
 										<img src="img/news_cards/card-5.jpg" alt="photo">
@@ -897,9 +970,9 @@
 							<!-- /article -->
 
 							<!-- subscribe-form -->
-							<div class="col-xl-4">
+							<div class="col-xl-4 col-lg-6 col-md-6">
 								<form action="/" method="post" class="ss-form">
-									<h3 class="ss-form__header">Подпишитесь на нашу еженедельную рассылку</h3>
+									<h3 class="ss-form__header">Подпишитесь на нашу <br> еженедельную рассылку</h3>
 									<input class="ss-form__input" type="email" placeholder="E-mail" value="" required=""
 										minlength="6" name="email">
 									<div class="ss-form__agree">
@@ -914,7 +987,7 @@
 							<!-- /subscribe-form -->
 
 							<!-- banner-telegram -->
-							<div class="col-xl-4">
+							<div class="col-xl-4 col-lg-6 col-md-6">
 								<div class="c-banner">
 									<img src="img/banners/banner_tg.jpg" alt="telegram">
 									<a class="c-banner__btn c-banner__btn--tg" href="https://t.me/fsk_today"
@@ -925,7 +998,7 @@
 
 
 							<!-- article -->
-							<div class="col-xl-4">
+							<div class="col-xl-4 col-lg-6 col-md-6">
 								<article class="news-feed__item">
 									<a href="#" class="news-feed__img">
 										<img src="img/news_cards/card-6.jpg" alt="photo">
@@ -944,7 +1017,7 @@
 
 
 							<!-- article -->
-							<div class="col-xl-4">
+							<div class="col-xl-4 col-lg-6 col-md-6">
 								<article class="news-feed__item">
 									<a href="#" class="news-feed__img">
 										<img src="img/news_cards/card-7.jpg" alt="photo">
@@ -962,7 +1035,7 @@
 							<!-- /article -->
 
 							<!-- article -->
-							<div class="col-xl-4">
+							<div class="col-xl-4 col-lg-6 col-md-6">
 								<article class="news-feed__item">
 									<a href="#" class="news-feed__img">
 										<img src="img/news_cards/card-1.jpg" alt="photo">
@@ -980,7 +1053,7 @@
 							<!-- /article -->
 
 							<!-- article -->
-							<div class="col-xl-4">
+							<div class="col-xl-4 col-lg-6 col-md-6">
 								<article class="news-feed__item">
 									<a href="#" class="news-feed__img">
 										<img src="img/news_cards/card-2.jpg" alt="photo">
@@ -999,7 +1072,7 @@
 
 
 							<!-- banner-yadzen -->
-							<div class="col-xl-4">
+							<div class="col-xl-4 col-lg-6 col-md-6">
 								<div class="c-banner">
 									<img src="img/banners/banner_dzen.jpg" alt="telegram">
 									<a class="c-banner__btn c-banner__btn--ya" href="https://zen.yandex.ru/media/fondsk.ru"
@@ -1027,7 +1100,7 @@
 			<div class="container">
 				<div class="footer__top">
 					<div class="row">
-						<div class="col-xl-6">
+						<div class="col-xl-6 col-lg-6 col-md-8 col-sm-12">
 							<ul class="footer__menu">
 								<li>
 									<a href="#" class="footer__menu-item">Главная</a>
@@ -1046,7 +1119,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="col-xl-3">
+						<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
 							<div class="social social--bottom">
 								<a class="social__link social--bottom__link" href="https://t.me/fsk_today" target="_blank">
 									<svg class="social__icon social__icon--tg">
@@ -1074,7 +1147,7 @@
 								</a>
 							</div>
 						</div>
-						<div class="col-xl-3">
+						<div class="col-xl-3 col-lg-3 col-md-12 col-sm-6">
 							<div class="footer__search search">
 								<form class="search-form" action="/search" method="get">
 									<input type="text" placeholder="Поиск" class="search-form__input" name="q">
@@ -1090,15 +1163,15 @@
 				</div>
 				<div class="footer__mid">
 					<div class="row row--end">
-						<div class="col-xl-3">
+						<div class="col-xl-3 col-lg-5 col-md-5 col-sm-12">
 							<a class="footer__logo" href="index.html">
 								<img src="img/logo/logo_bottom.svg" alt="logo">
 							</a>
 						</div>
-						<div class="col-xl-3">
+						<div class="col-xl-3 col-lg-5 col-md-6 col-sm-9">
 							<ul class="menu--sm">
 								<li>
-									<a href="#">О проекте</a>
+									<a href="#">О проекте</a>
 								</li>
 								<li>
 									<a href="#">Авторы</a>
@@ -1111,12 +1184,11 @@
 								</li>
 							</ul>
 						</div>
-						<div class="col-xl-1">
+						<div class="col-xl-1 offset-xl-0 col-lg-1 offset-lg-1 col-md-1 col-sm-3">
 							<div class="age">16+</div>
 						</div>
-						<div class="col-xl-5">
-							<div class="info">
-								Аналитический портал "Фонд стратегической культуры <br>
+						<div class="col-xl-5 col-lg-12 col-sm-12">
+							<div class="info">Аналитический портал "Фонд стратегической культуры <br>
 								Электронный адрес: and4195@yandex.ru, info@fondsk.ru <br>
 								Cвидетельство о регистрации от 24.07.2008 серия ЭЛ № ФС 77-32663 <br>
 							</div>
@@ -1184,7 +1256,7 @@
 		</svg>
 	</div>
 
-	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="js/libs/slick.min.js"></script>
 	<script src="js/script.js"></script>

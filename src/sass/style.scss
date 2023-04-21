@@ -45,22 +45,20 @@ p {
 	line-height: 27px;
 	color: $t_dark;
 }
-
 .page {
 	height: 100vh;
-	// display: flex;
-	// flex-direction: column;
 }
 .content {
 	// flex: 1;
 	padding: 40px 0 80px;
 	&__top {
-		margin-bottom: 60px;
+		margin-bottom: 80px;
 	}
 }
 
 /* Blocks */
 
+@import "blocks/mobile-menu";
 @import "blocks/header";
 @import "blocks/forms";
 @import "blocks/titles";
@@ -73,3 +71,5 @@ p {
 @import "blocks/load-more";
 @import "blocks/footer";
 @import "blocks/media";
+
+

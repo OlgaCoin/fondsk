@@ -14,11 +14,299 @@
 			left: 46px;
 		}
 	}
+	.footer {
+		& .menu--sm {
+			& li {
+				margin-right: 6px;
+			}
+		}
+	}	
+}
 
-	.footer .menu--sm {
-		& li {
-			margin-right: 6px;
+@media (max-width: 1199px) {
+	.top-slider {
+		margin-bottom: 85px;
+		&__img {
+			& img {
+				width: 100%;
+			}
+		}
+		&--nav {
+			right: 80px;
+			left: 80px;
+			top: 35%;
 		}
 	}
-	
+	.news-feed {
+		&__item {
+			min-height: 500px;
+		}
+	}
+	.footer {
+		&__menu li {
+			margin-right: 16px;
+			font-size: 14px;
+		}
+		& .menu--sm {
+			& li {
+				margin-right: 6px;
+			}
+		}
+		&__mid {
+			margin-bottom: 20px;
+			& .row--end {
+				align-items: center;
+			}
+		}
+	}	
+	.social--bottom {
+		&__link {
+			margin-right: 14px;
+		}
+	}
+	.info {
+		text-align: left;
+		margin-top: 15px;
+		& br {
+			display: none;
+		}
+	}	
+}
+
+@media (max-width: 991px) {
+	.header {
+		&__menu {
+			& li {
+				margin-right: 10px;
+			}
+			&-item {
+				font-size: 14px;
+			}
+		}
+	}
+	.top-slider {
+		margin-bottom: 180px;
+		&--nav {
+			right: 40px;
+			left: 40px;
+			top: 23%;
+		}
+	}
+	.news-block.cat--col4,
+	.news-block.cat--col6 {
+		.news-block__wrapper {	
+			padding-bottom: 30px;
+		}
+	}
+	.news-block {
+		&__img--sm {
+			height: 130px;
+		}
+		&.cat {
+			margin: 30px 0 20px;
+		}
+		&__content.full-width {
+			margin-bottom: 40px;
+		}
+	}
+	.footer {
+		&__search {
+			margin-top: 20px;
+		}
+		&__mid {
+			& .row--end {
+				align-items: start;
+				justify-content: space-between;
+			}
+		}
+		& .menu--sm {
+			margin-top: 10px;
+		}
+	}
+	.age {
+		font-size: 15px;
+		line-height: 22px;
+		padding: 4px 8px;
+	}
+}
+
+@media (max-width: 767px) {
+	.btn-menu {
+		display: flex;
+	}
+	.mobile-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.header {
+		&__top {
+			display: none;
+		}
+	}
+	.header {
+		&__nav {
+			height: 60px;
+		}
+		&__menu {
+			display: none;
+		}
+		&__logo--mobile {
+			display: inline-block;
+		}
+	}
+	.top-slider {
+		margin-bottom: 50px;
+		min-height: auto;
+		&__img {
+			& img {
+				height: 100%;
+				min-width: 100%;
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				display: block;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0,0,0,.2);
+				z-index: 2;
+			}
+		}
+		&--nav {
+			position: static;
+			width: 100%;
+		}
+		&__meta {
+			font-size: 10px;
+		}
+		&__header > a {
+			font-size: 32px;
+			line-height: 38px;
+			margin-bottom: 15px;
+		}
+		&__descr {
+			font-size: 18px;
+			line-height: 26px;
+		}
+		& .meta__item {
+			margin-right: 12px;
+		}
+		&__card {
+			padding: 24px;
+			& .label {
+				margin-right: 12px;
+			}
+		}
+	}
+	.slick-prev, .slick-next {
+		top: 0;
+		right: 0;
+	}
+	.slick-prev {	
+		right: 70px;
+	}
+	.slick-dots {
+		top: 10px;
+		& li {
+			& button {
+				background-color: $white;
+			}
+		}
+	}
+	.news-feed {
+		&__img {
+			height: 308px;
+		}
+	}
+	.news-block {
+		&__img {
+			&--sm {
+				height: 206px;
+			}
+			&--md {
+				height: 196px;
+			}
+		}
+	}
+	.social--bottom {
+		padding-top: 24px;
+	}
+	.footer {
+		& .menu--sm {
+			margin-top: 15px;
+			& li {
+				line-height: 24px;
+				margin-right: 14px;
+			}
+		}
+		&__mid {
+			margin-bottom: 20px;
+		}
+	}	
+	.age {
+		font-size: 15px;
+		line-height: 22px;
+		padding: 4px 8px;
+	}
+	.toTop {
+		right: 30px;
+	}
+}
+
+@media (max-width: 575px) {
+	.content {
+		padding: 30px 0 80px;
+	}
+	.top-slider {
+		&__header > a {
+			font-size: 26px;
+			line-height: 32px;
+		}
+		& .meta__item.tag,
+		& .meta__item.views {
+			display: none;
+		}
+		&__card {
+			padding: 24px 10px;
+		}
+	}
+	.news-feed {
+		&__img {
+			height: 210px;
+		}
+	}
+	.news-block {
+		&__img {
+			&--sm {
+				height: 136px;
+			}
+			&--md {
+				height: 120px;
+			}
+		}
+		&__content.full-width {
+			padding: 30px 20px;
+		}
+	}
+	.footer {
+		&__menu {
+			flex-wrap: wrap;
+			& li {
+				line-height: 35px;
+			}
+		}
+		&__search {
+			margin-top: 30px;
+			margin-bottom: 5px;
+		}
+	}
+	.age {
+		margin-top: 15px;
+	}
+	.toTop {
+		right: 12px;
+	}
 }
