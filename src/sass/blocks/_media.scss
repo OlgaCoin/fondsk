@@ -131,6 +131,9 @@
 }
 
 @media (max-width: 767px) {
+	.mobile-nav {
+		display: flex;
+	}
 	.btn-menu {
 		display: flex;
 	}
