@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Аналитический портал — Международное обозрение — Фонд стратегической культуры — ФСК</title>
+	<meta name="keywords" content="Фонд стратегической культуры, ФСК">
+	<meta name="description"
+		content="Аналитический портал Фонд стратегической культуры — международное обозрение мировых событий, политических и экономических стратегий, исторического и культурного наследия, альтернативной истории. Главные новости из горячих точек мира и мнения экспертов.">
+
+	<!-- Favicon  -->
+	<link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+	<link rel="manifest" href="icons/favicon/site.webmanifest">
+	<link rel="mask-icon" href="icons/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="icons/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="icons/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<!-- svg-sprite -->
+	<svg style="display: none;">
+		<symbol id="tg-top" viewbox="0 0 448 512">
+			<path
+				d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z" />
+		</symbol>
+		<symbol id="vk-top" viewbox="0 0 576 512">
+			<path
+				d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z" />
+		</symbol>
+		<symbol id="ok-top" viewbox="0 0 320 512">
+			<path
+				d="M275.1 334c-27.4 17.4-65.1 24.3-90 26.9l20.9 20.6 76.3 76.3c27.9 28.6-17.5 73.3-45.7 45.7-19.1-19.4-47.1-47.4-76.3-76.6L84 503.4c-28.2 27.5-73.6-17.6-45.4-45.7 19.4-19.4 47.1-47.4 76.3-76.3l20.6-20.6c-24.6-2.6-62.9-9.1-90.6-26.9-32.6-21-46.9-33.3-34.3-59 7.4-14.6 27.7-26.9 54.6-5.7 0 0 36.3 28.9 94.9 28.9s94.9-28.9 94.9-28.9c26.9-21.1 47.1-8.9 54.6 5.7 12.4 25.7-1.9 38-34.5 59.1zM30.3 129.7C30.3 58 88.6 0 160 0s129.7 58 129.7 129.7c0 71.4-58.3 129.4-129.7 129.4s-129.7-58-129.7-129.4zm66 0c0 35.1 28.6 63.7 63.7 63.7s63.7-28.6 63.7-63.7c0-35.4-28.6-64-63.7-64s-63.7 28.6-63.7 64z" />
+		</symbol>
+		<symbol id="rss-foo" viewbox="0 0 448 512">
+			<path
+				d="M128.081 415.959c0 35.369-28.672 64.041-64.041 64.041S0 451.328 0 415.959s28.672-64.041 64.041-64.041 64.04 28.673 64.04 64.041zm175.66 47.25c-8.354-154.6-132.185-278.587-286.95-286.95C7.656 175.765 0 183.105 0 192.253v48.069c0 8.415 6.49 15.472 14.887 16.018 111.832 7.284 201.473 96.702 208.772 208.772.547 8.397 7.604 14.887 16.018 14.887h48.069c9.149.001 16.489-7.655 15.995-16.79zm144.249.288C439.596 229.677 251.465 40.445 16.503 32.01 7.473 31.686 0 38.981 0 48.016v48.068c0 8.625 6.835 15.645 15.453 15.999 191.179 7.839 344.627 161.316 352.465 352.465.353 8.618 7.373 15.453 15.999 15.453h48.068c9.034-.001 16.329-7.474 16.005-16.504z" />
+		</symbol>
+		<symbol id="search" viewbox="0 0 512 512">
+			<path
+				d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" />
+		</symbol>
+		<symbol id="tag" viewbox="0 0 640 512">
+			<path
+				d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z" />
+		</symbol>
+		<symbol id="eye" viewbox="0 0 576 512">
+			<path
+				d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19zM288 400a144 144 0 1 1 144-144 143.93 143.93 0 0 1-144 144zm0-240a95.31 95.31 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160z" />
+		</symbol>
+		<symbol id="arrow-right" viewbox="0 0 448 512">
+			<path
+				d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z" />
+		</symbol>
+		<symbol id="lightning" viewbox="0 0 24 24">
+			<path fill-rule="evenodd"
+				d="M9,15 L3.91937515,15 L15,1.14921894 L15,9 L20.0806248,9 L9,22.8507811 L9,15 Z M8.08062485,13 L11,13 L11,17.1492189 L15.9193752,11 L13,11 L13,6.85078106 L8.08062485,13 Z" />
+		</symbol>
+		<symbol id="angle-up" viewbox="0 0 24 24">
+			<path
+				d="M17,13.41,12.71,9.17a1,1,0,0,0-1.42,0L7.05,13.41a1,1,0,0,0,0,1.42,1,1,0,0,0,1.41,0L12,11.29l3.54,3.54a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29A1,1,0,0,0,17,13.41Z" />
+		</symbol>
+	</svg>
+	<!-- /svg-sprite -->
+
+	<div class="page">
+
+		<header class="header">
+			<div class="header__top">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-3 col-lg-4 col-md-6 col-sm-7">
+							<a class="header__logo" href="index.html">
+								<img src="img/logo/logo_top.svg" alt="logo">
+							</a>
+						</div>
+						<div class="col-xl-6 col-lg-5 d-md-none d-sm-none d-none d-lg-block">
+							<div class="header__search search">
+								<form class="search-form" action="/search" method="get">
+									<input type="text" placeholder="Поиск" class="search-form__input" name="q">
+									<button type="submit" class="search-form__submit">
+										<svg class="search-form__icon">
+											<use xlink:href="#search"></use>
+										</svg>
+									</button>
+								</form>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-5">
+							<div class="social">
+								<a class="social__link" href="https://t.me/fsk_today" target="_blank">
+									<svg class="social__icon social__icon--tg">
+										<use xlink:href="#tg-top"></use>
+									</svg>
+								</a>
+
+								<a class="social__link" href="https://new.vk.com/stratfond" target="_blank">
+									<svg class="social__icon social__icon--vk">
+										<use xlink:href="#vk-top"></use>
+									</svg>
+								</a>
+
+								<a class="social__link" href="https://ok.ru/fondsk" target="_blank">
+									<svg class="social__icon social__icon--ok">
+										<use xlink:href="#ok-top"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<nav class="header__nav">
+				<div class="container">
+					<div class="mobile-wrapper">
+						<a class="header__logo--mobile" href="index.html">
+							<img src="img/logo/logo_top.svg" alt="logo">
+						</a>
+
+						<ul class="header__menu">
+							<li>
+								<a href="#" class="header__menu-item">КОНКУРС</a>
+							</li>
+							<li class="drop-down">
+								<a href="#" class="header__menu-item">ТЕМЫ +</a>
+								<div class="header__submenu">
+									<div class="container">
+										<div class="row">
+											<div class="col-xl-3 col-lg-3 col-md-6">
+												<ul>
+													<li><a href="#" class="header__submenu-item">Балканский излом</a></li>
+													<li><a href="#" class="header__submenu-item">Будущее Белоруссии</a></li>
+													<li><a href="#" class="header__submenu-item">Ближневосточный Узел</a></li>
+												</ul>
+											</div>
+											<div class="col-xl-3 col-lg-3 col-md-6">
+												<ul>
+													<li><a href="#" class="header__submenu-item">Кавказ</a></li>
+													<li><a href="#" class="header__submenu-item">Великая победа</a></li>
+													<li><a href="#" class="header__submenu-item">Кризис в Европе</a></li>
+												</ul>
+											</div>
+											<div class="col-xl-3 col-lg-3 col-md-6">
+												<ul>
+													<li><a href="#" class="header__submenu-item">Оборона и безопастность</a></li>
+													<li><a href="#" class="header__submenu-item">Православие</a></li>
+													<li><a href="#" class="header__submenu-item">США: бизнес и политика</a></li>
+												</ul>
+											</div>
+											<div class="col-xl-3 col-lg-3 col-md-6">
+												<ul>
+													<li><a href="#" class="header__submenu-item">Украсина и Донбасс</a></li>
+													<li><a href="#" class="header__submenu-item">Энергетика</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="drop-down">
+								<a href="#" class="header__menu-item">РЕГИОНЫ +</a>
+							</li>
+							<li>
+								<a href="#" class="header__menu-item">НОВОСТИ</a>
+							</li>
+							<li>
+								<a href="#" class="header__menu-item">ПОЛИТИКА</a>
+							</li>
+							<li>
+								<a href="#" class="header__menu-item">ЭКОНОМИКА</a>
+							</li>
+							<li>
+								<a href="#" class="header__menu-item">КУЛЬТУРА</a>
+							</li>
+							<li>
+								<a href="#" class="header__menu-item">МНЕНИЕ</a>
+							</li>
+						</ul>
+
+						<div class="btn-menu" title="Меню">
+							<div class="btn-row"></div>
+							<div class="btn-row"></div>
+							<div class="btn-row"></div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="progress-container">
+					<div class="progress-bar progress" id="progressBar"></div>
+				</div>
+
+			</nav>
+
+			<nav class="mobile-nav">
+				<ul class="mobile__menu">
+					<li>
+						<a href="#" class="mobile__menu-item">КОНКУРС</a>
+					</li>
+					<li class="drop-down">
+						<a href="#" class="mobile__menu-item">ТЕМЫ +</a>
+
+						<ul class="mobile__submenu">
+							<li><a href="#" class="mobile__submenu-item">Балканский излом</a></li>
+							<li><a href="#" class="mobile__submenu-item">Будущее Белоруссии</a></li>
+							<li><a href="#" class="mobile__submenu-item">Ближневосточный Узел</a></li>
+							<li><a href="#" class="mobile__submenu-item">Кавказ</a></li>
+							<li><a href="#" class="mobile__submenu-item">Великая победа</a></li>
+							<li><a href="#" class="mobile__submenu-item">Кризис в Европе</a></li>
+							<li><a href="#" class="mobile__submenu-item">Оборона и безопастность</a></li>
+							<li><a href="#" class="mobile__submenu-item">Православие</a></li>
+							<li><a href="#" class="mobile__submenu-item">США: бизнес и политика</a></li>
+							<li><a href="#" class="mobile__submenu-item">Украсина и Донбасс</a></li>
+							<li><a href="#" class="mobile__submenu-item">Энергетика</a></li>
+						</ul>
+
+					</li>
+					<li>
+						<a href="#" class="mobile__menu-item">РЕГИОНЫ</a>
+					</li>
+					<li>
+						<a href="#" class="mobile__menu-item">НОВОСТИ</a>
+					</li>
+					<li>
+						<a href="#" class="mobile__menu-item">ПОЛИТИКА</a>
+					</li>
+					<li>
+						<a href="#" class="mobile__menu-item">ЭКОНОМИКА</a>
+					</li>
+					<li>
+						<a href="#" class="mobile__menu-item">КУЛЬТУРА</a>
+					</li>
+					<li>
+						<a href="#" class="mobile__menu-item">МНЕНИЕ</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+
+		<section class="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-8 col-lg-12">
+						<section class="article">
+							<header class="article__top">
+								<div class="article__img">
+									<img src="img/slider/slide.jpg" alt="photo">
+									<div class="article__views meta">
+										<div class="views meta__item">
+											127
+										</div>
+									</div>
+								</div>
+								<div class="article__meta-box">
+									<div class="article__meta meta">
+										<span class="data meta__item">09.02.2023 | <a href="#">ВАЛЕНТИН КАТАСОНОВ</a> </span>
+										<div class="tag meta__item">
+											<a href="#">ПОЛИТИКА</a>
+										</div>
+									</div>
+									<div class="size-and-print">
+										<div class="size">
+											<span>Размер шрифта:</span>
+											<a href="#" class="plus" title="Увеличить шрифт">A+</a>
+											<a href="#" class="minus" title="Уменьшить шрифт">A-</a>
+										</div>
+										<div class="print">
+											<a href="#" title="Версия для печати">
+												<img src="icons/article/print.svg" alt="print">
+											</a>
+										</div>
+
+									</div>
+								</div>
+								<h1 class="article__title">Центробанк продолжает высасывать денежные соки из российской экономики</h1>
+								<p class="article__descr">Разногласия между западными военными и политиками в отношении помощи Украине расшатывают фундамент НАТО</p>
+							</header>
+						</section>
+					</div>
+
+					<div class="col-xl-4 col-lg-12 no-print">
+						<aside class="sidebar">
+
+							<div class="news-block aside-item">
+								<div class="news-block__wrapper">
+									<a href="#" class="label-link">читают прямо сейчас</a>
+									<div class="news-block__content">
+
+										<div class="news-block__item">
+											<div class="meta news-block__meta">
+												<span class="data meta__item">13.04.2023 | <a href="#">игорь логинов</a> </span>
+											</div>
+											<h3 class="news-block__header"><a href="#">Сербия прощается с Россией</a></h3>
+										</div>
+
+										<div class="news-block__item">
+											<div class="meta news-block__meta">
+												<span class="data meta__item">09.02.2023 | <a href="#">игорь логинов</a> </span>
+											</div>
+											<h3 class="news-block__header"><a href="#">Высотные аэростаты над Украиной рассеют
+													туман войны</a></h3>
+										</div>
+
+										<div class="news-block__item">
+											<div class="meta news-block__meta">
+												<span class="data meta__item">13.04.2023 | <a href="#">игорь логинов</a> </span>
+											</div>
+											<h3 class="news-block__header"><a href="#">Как Киев смягчает последствия ударов по
+													инфраструктуре</a></h3>
+										</div>
+										<hr>
+										<ul class="news-block__list">
+											<li>
+												<a href="#">Китай показал миру, что Америка вздрогнула</a>
+											</li>
+											<li>
+												<a href="#">Немецкая «ливерная колбаса» в большом спросе</a>
+											</li>
+											<li>
+												<a href="#">Центробанки мира готовятся к гигантскому финансовому апокалипсису</a>
+											</li>
+											<li>
+												<a href="#">Немецкая «ливерная колбаса» в большом спросе</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="news-block aside-item">
+								<div class="news-block__wrapper">
+									<a href="#" class="label-link">мнение</a>
+									<div class="news-block__content">
+
+										<div class="news-block__item">
+											<div class="meta news-block__meta meta--mb meta--img">
+												<div class="meta--img__wrapper">
+													<span class="data meta__item">09.02.2023 | <a href="#">ВАЛЕРИЙ БУРТ</a></span>
+													<h3 class="news-block__header"><a href="#">«Это не наша война!»</a></h3>
+												</div>
+												<img class="meta__img meta__img--right" src="img/author.jpg" alt="author">
+											</div>
+
+											<p>Польша — возмутитель спокойствия в Старом Свете со старыми повадками
+												«европейской»...
+											</p>
+										</div>
+
+										<hr>
+										<ul class="news-block__list">
+											<li>
+												<a href="#">Траектории экономического развития ведущих
+													стран мира за три десятилетия</a>
+											</li>
+											<li>
+												<a href="#">Станет ли когда-нибудь Марин Ле Пен
+													президентом Франции?</a>
+											</li>
+											<li>
+												<a href="#">США рвутся к стратегическому превосходству
+													в космосе</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="news-block aside-item">
+								<div class="news-block__wrapper">
+									<a href="#" class="label-link">события. комментарии</a>
+									<div class="news-block__content">
+
+										<div class="news-block__item">
+											<div class="meta news-block__meta">
+												<span class="data meta__item">13.04.2023 | <a href="#">игорь логинов</a> </span>
+											</div>
+											<h3 class="news-block__header"><a href="#">Министерству обороны Польши не хватает
+													женщин</a></h3>
+											<p>Минобороны Польши обратилось в министерство образования по поводу призыва в армию
+												женщин с...</p>
+										</div>
+
+										<div class="news-block__item">
+											<div class="meta news-block__meta">
+												<span class="data meta__item">09.02.2023 | <a href="#">игорь логинов</a> </span>
+											</div>
+											<h3 class="news-block__header"><a href="#">Global Times: передача конфискованных
+													активов россиян Украине нанесёт тяжёлый удар по «долларовой гегемонии»</a></h3>
+											<p>Европа заплатила высокую цену за ухудшение ситуации с безопасностью вокруг неё,
+												в то время как...</p>
+										</div>
+
+										<div class="news-block__item">
+											<div class="meta news-block__meta">
+												<span class="data meta__item">13.04.2023 | <a href="#">игорь логинов</a> </span>
+											</div>
+											<h3 class="news-block__header"><a href="#">Специальная военная операция ВС РФ и события
+													на Украине 9 февраля, день</a></h3>
+											<p>ЧВК «Вагнер» в течение дня вели активные штурмовые действия на северо-востоке
+												Артёмовска...</p>
+										</div>
+
+										<div class="news-block__item">
+											<div class="meta news-block__meta">
+												<span class="data meta__item">13.04.2023 | <a href="#">игорь логинов</a> </span>
+											</div>
+											<h3 class="news-block__header"><a href="#">Аусвайсы для европейцев в Латвии —
+													законодательная инициатива бьёт ключом</a></h3>
+											<p>Депутат латвийского сейма от партии национального объединения "Всё для Латвии! —...
+											</p>
+										</div>
+
+										<hr>
+
+										<ul class="news-block__list">
+											<li>
+												<a href="#">China Daily: Евросоюзу следовало бы шире оценивать последствия своих
+													действий</a>
+											</li>
+											<li>
+												<a href="#">Сеймур Херш: «Северный поток» подорвали диверсанты из США и Норвегии</a>
+											</li>
+											<li>
+												<a href="#">Глава офиса президента создаёт свою армию?</a>
+											</li>
+											<li>
+												<a href="#">Специальная военная операция ВС РФ и события на Украине 8 февраля,
+													день</a>
+											</li>
+											<li>
+												<a href="#">Евросоюз вгоняет Молдавию в долги и накачивает оружием</a>
+											</li>
+											<li>
+												<a href="#">Эстония наелась украинского</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<!-- subscribe-form -->
+							<form action="/" method="post" class="ss-form aside-item">
+								<h3 class="ss-form__header">Подпишитесь на нашу <br> еженедельную рассылку</h3>
+								<input class="ss-form__input" type="email" placeholder="E-mail" value="" required=""
+									minlength="6" name="email">
+								<div class="ss-form__agree">
+									<input type="checkbox" name="agree" id="agree" required>
+									<label for="agree">Даю согласие на обработку моих персональных данных
+										в соответствии с<a href="#" target="_blank"> политикой конфиденциальности
+											Фонда</a></label>
+								</div>
+								<input class="ss-form__submit" type="submit" value="Подписаться">
+							</form>
+							<!-- /subscribe-form -->
+
+							<div class="ss-social aside-item">
+								<h3 class="ss-social__header">Подпишитесь на нас и будьте <br> всегда в курсе событий!</h3>
+								<div class="ss-social__wrapper">
+									<a class="ss-social__link" href="https://twitter.com/fondsk" target="_blank" title="Твиттер">
+										<img src="icons/sidebar/twitter.svg" alt="twitter">
+									</a>
+
+									<a class="ss-social__link" href="https://t.me/fsk_today" target="_blank" title="Телеграм">
+										<img src="icons/sidebar/telegram.svg" alt="telegram">
+									</a>
+
+									<a class="ss-social__link" href="https://new.vk.com/stratfond" target="_blank"
+										title="ВКонтакте">
+										<img src="icons/sidebar/vk.svg" alt="vkontakte">
+									</a>
+
+									<a class="ss-social__link" href="https://ok.ru/fondsk" target="_blank" title="Одноклассники">
+										<img src="icons/sidebar/ok.svg" alt="odnoklassniki">
+									</a>
+								</div>
+							</div>
+						</aside>
+
+					</div>
+				</div>
+			</div>
+
+
+
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__top">
+					<div class="row">
+						<div class="col-xl-6 col-lg-6 col-md-8 col-sm-12">
+							<ul class="footer__menu">
+								<li>
+									<a href="#" class="footer__menu-item">Главная</a>
+								</li>
+								<li>
+									<a href="#" class="footer__menu-item">ПОЛИТИКА</a>
+								</li>
+								<li>
+									<a href="#" class="footer__menu-item">ЭКОНОМИКА</a>
+								</li>
+								<li>
+									<a href="#" class="footer__menu-item">КУЛЬТУРА</a>
+								</li>
+								<li>
+									<a href="#" class="footer__menu-item">МНЕНИЕ</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+							<div class="social social--bottom">
+								<a class="social__link social--bottom__link" href="https://t.me/fsk_today" target="_blank">
+									<svg class="social__icon social__icon--tg">
+										<use xlink:href="#tg-top"></use>
+									</svg>
+								</a>
+
+								<a class="social__link social--bottom__link" href="https://new.vk.com/stratfond"
+									target="_blank">
+									<svg class="social__icon social__icon--vk">
+										<use xlink:href="#vk-top"></use>
+									</svg>
+								</a>
+
+								<a class="social__link social--bottom__link" href="https://ok.ru/fondsk" target="_blank">
+									<svg class="social__icon social__icon--ok">
+										<use xlink:href="#ok-top"></use>
+									</svg>
+								</a>
+
+								<a class="social__link social--bottom__link" href="https://www.fondsk.ru/rss.html">
+									<svg class="social__icon social__icon--rss">
+										<use xlink:href="#rss-foo"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-12 col-sm-6">
+							<div class="footer__search search">
+								<form class="search-form" action="/search" method="get">
+									<input type="text" placeholder="Поиск" class="search-form__input" name="q">
+									<button type="submit" class="search-form__submit">
+										<svg class="search-form__icon">
+											<use xlink:href="#search"></use>
+										</svg>
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__mid">
+					<div class="row row--end">
+						<div class="col-xl-3 col-lg-5 col-md-5 col-sm-12">
+							<a class="footer__logo" href="index.html">
+								<img src="img/logo/logo_bottom.svg" alt="logo">
+							</a>
+						</div>
+						<div class="col-xl-3 col-lg-5 col-md-6 col-sm-9">
+							<ul class="menu--sm">
+								<li>
+									<a href="#">О проекте</a>
+								</li>
+								<li>
+									<a href="#">Авторы</a>
+								</li>
+								<li>
+									<a href="#">Контакты</a>
+								</li>
+								<li>
+									<a href="#">Архив</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-xl-1 offset-xl-0 col-lg-1 offset-lg-1 col-md-1 col-sm-3">
+							<div class="age">16+</div>
+						</div>
+						<div class="col-xl-5 col-lg-12 col-sm-12">
+							<div class="info">Аналитический портал "Фонд стратегической культуры <br>
+								Электронный адрес: and4195@yandex.ru, info@fondsk.ru <br>
+								Cвидетельство о регистрации от 24.07.2008 серия ЭЛ № ФС 77-32663 <br>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="row">
+						<div class="col-xl-6">
+							<p>* Экстремистские и террористические организации, запрещенные в Российской Федерации: ВО
+								«Свобода», «Чеченская Республика Ичкерия», «Правый сектор», «Азов», «Айдар», «Национальный
+								корпус», «Украинская повстанческая армия» (УПА), «Исламское государство» (ИГ, ИГИЛ, ДАИШ),
+								«Джабхат Фатх аш-Шам», «Джабхат ан-Нусра», «Хайат Тахрир-аш-Шам», «Аль-Каида», «Аш-Шабаб»,
+								«УНА-УНСО», «Талибан», «Братья-мусульмане», «Меджлис крымско-татарского народа», «Хизб
+								ут-Тахрир»,«Имарат Кавказ», «Нурджулар», «Таблиги Джамаат», «Лашкар-И-Тайба», «Исламская партия
+								Туркестана», «Исламское движение Узбекистана», «Исламское движение Восточного Туркестана»
+								(ИДВТ), «Джунд аш-Шам», «АУМ Синрике», «Братство» Корчинского, «Тризуб им. Степана Бандеры»,
+								«Организация украинских националистов» (ОУН), С14. Компания Meta и социальные сети Facebook /
+								Фейсбук и Instagram / Инстаграм - запрещённые в России экстремистские террористические
+								организации
+							</p>
+							<p>** "Голос Америки", "Idel.Реалии", Кавказ.Реалии, Крым.Реалии, Телеканал Настоящее Время,
+								Татаро-башкирская служба Радио Свобода (Azatliq Radiosi), Радио Свободная Европа/Радио Свобода
+								(PCE/PC), "Сибирь.Реалии", Фонд Беллингкет (Stichting Bellingcat) - СМИ, признанные иностранным
+								агентом по решению Министерства юстиции РФ.
+							</p>
+						</div>
+						<div class="col-xl-6">
+							<p>*** «Национальный фонд в поддержку демократии» (The National Endowment for Democracy), Институт
+								Открытое Общество Фонд Содействия (OSI Assistance Foundation), Фонд Открытое общество (Open
+								Society Foundation), Национальный Демократический Институт Международных Отношений (National
+								Democratic Institute for International Affairs), Национальный Демократический Институт по
+								международным вопросам, Корпорация «Международный Республиканский Институт» (International
+								Republican Institute), Open Russia Civic Movement, Open Russia (Общественное сетевое движение
+								«Открытая Россия») (Великобритания), OR (Otkrytaya Rossia) («Открытая Россия») (Великобритания)
+								(с 08.11.2018 – HUMAN RIGHTS PROJECT MANAGEMENT), The German Marshall Fund of the United States
+								(GMF) (Германский фонд Маршалла Соединенных Штатов) (США), "Европейский фонд за демократию"
+								(European Endowment for Democracy), Атлантический совет (Atlantic Council), Джеймстаунский фонд
+								(Jamestown Foundation) - организации, деятельность которых признана нежелательной на территории
+								РФ по решению Генеральной прокуратуры. Деятельность Агентства США по международному развитию
+								(USAID) запрещена в России.
+							</p>
+							<p>**** Фонд борьбы с коррупцией признан экстремистской организацией на территории РФ по решению
+								суда.
+							</p>
+						</div>
+					</div>
+					<hr>
+					<div class="copyright">
+						© 2011 – 2021 | ФСК - Аналитика: новости, политика, экономика, история и культура, мнение эксперта |
+						Перепечатка материалов сайта разрешается с письменного согласия редакции при обязательном условии
+						гиперссылки на электронное издание www.fondsk.ru с указанием автора перепечатываемого материала и
+						полного названия источника (Фонд Стратегической Культуры). Точка зрения редакции сайта может не
+						совпадать с точкой зрения авторов статей.
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<div class="toTop" title="Наверх">
+		<svg class="toTop__icon">
+			<use xlink:href="#angle-up"></use>
+		</svg>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/libs/slick.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

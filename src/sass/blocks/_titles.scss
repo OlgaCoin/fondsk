@@ -4,6 +4,7 @@ h1, h1 > a {
 	font-size: 38px;
 	line-height: 41px;
 	color: $t_dark;
+	text-transform: none;
 }
 
 h2, h2 > a {
@@ -12,6 +13,7 @@ h2, h2 > a {
 	font-size: 27px;
 	line-height: 31px;
 	color: $t_dark;
+	text-transform: none;
 }
 
 h3, h3 > a {
@@ -20,4 +22,5 @@ h3, h3 > a {
 	font-size: 22px;
 	line-height: 26px;
 	color: $t_dark;
+	text-transform: none;
 }

@@ -1,0 +1,37 @@
+
+.aside-item {
+	margin-bottom: 50px;
+	& p {
+		font-size: 15px;
+		line-height: 22px;
+	}
+}
+.ss-social {
+	border: $border;
+	text-align: center;
+	padding: 30px 20px 55px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	&__wrapper {
+		display: flex;
+		justify-content: space-around;
+		margin-top: 30px;
+	}
+	&__link {
+		display: block;
+		margin-right: 22px;
+		transition: $trans;
+		&:last-child {
+			margin-right: 0;
+		}
+		&:hover {
+			opacity: .8;
+		}
+		& > img {
+			width: 52px;
+			height: 52px;
+		}
+	}
+}

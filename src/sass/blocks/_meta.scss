@@ -45,14 +45,29 @@
 	&__img {
 		display: block;
 		border-radius: $radius;
-		height: 56px;
-		width: 56px;
 		&--left {
+			height: 56px;
+			width: 56px;
 			margin-right: 26px;
+		}
+		&--right {
+			width: 80px;
+			height: 80px;
 		}
 	}
 	&--mb {
 		margin-bottom: 12px;
+	}
+	&--img {
+		justify-content: space-between;
+		&__wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			& span {
+				margin-bottom: 20px;
+			}
+		}
 	}
 }
 .label {
@@ -80,3 +95,4 @@
 		}
 	}
 }
+

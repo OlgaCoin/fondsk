@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+
+
 	// slider
 
 	$('.top-slider--for').slick({
@@ -31,6 +33,7 @@ $(document).ready(function () {
 	// sticky menu + toTop
 
 	$('body,html').scroll(function () {
+
 		if ($(this).scrollTop() >= 60) {
 			$('.header__nav').addClass('fixed');
 		} else {
@@ -74,5 +77,25 @@ $(document).ready(function () {
 	});
 
 
+	// function progressBarScroll() {
+	// 	let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
+	// 		height =
+	// 			document.documentElement.scrollHeight -
+	// 			document.documentElement.clientHeight,
+	// 		scrolled = (winScroll / height) * 100;
+	// 	document.getElementById("progressBar").style.width = scrolled + "%";
+	// }
+
+	// window.onscroll = function () {
+	// 	progressBarScroll();
+	// };
+
+
+
+
+
+
 });
+
+
 
