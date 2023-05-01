@@ -1,0 +1,19 @@
+.short-news {
+	margin-top: 90px;
+	&__item {
+		min-height: 370px;
+	}
+	&__content {
+		border-top: 4px solid $outline;
+		padding: 50px 0;
+	}
+	&__img {
+		height: 168px;
+	}
+	&__label-link {
+		padding: 0 19px;
+		&:after {
+			display: none;
+		}
+	}
+}

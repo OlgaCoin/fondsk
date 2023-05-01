@@ -1,0 +1,29 @@
+.rating {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	margin-bottom: 60px;
+	&__title {
+		@include link-caps-sm;
+		color: $t_light;
+		margin-bottom: 10px;
+	}
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__counter {
+		@include link-caps;
+		color: $t_light;
+	}
+	&__icon {
+		display: inline-block;
+		width: 20px;
+		height: 19px;
+		fill: #FAB140;
+		cursor: pointer;
+		margin-right: 6px;
+	}
+}

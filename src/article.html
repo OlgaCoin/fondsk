@@ -22,7 +22,9 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.min.css">
+
 </head>
 
 <body>
@@ -67,6 +69,14 @@
 		<symbol id="angle-up" viewbox="0 0 24 24">
 			<path
 				d="M17,13.41,12.71,9.17a1,1,0,0,0-1.42,0L7.05,13.41a1,1,0,0,0,0,1.42,1,1,0,0,0,1.41,0L12,11.29l3.54,3.54a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29A1,1,0,0,0,17,13.41Z" />
+		</symbol>
+		<symbol id="star-filled" viewbox="0 0 20 19">
+			<path
+				d="M9.99999 0.666626C10.3806 0.666626 10.7282 0.882698 10.8967 1.224L13.2393 5.96976L18.4779 6.73547C18.8545 6.79051 19.1672 7.05452 19.2846 7.41653C19.4019 7.77853 19.3037 8.17579 19.0311 8.44132L15.2412 12.1327L16.1356 17.3476C16.1999 17.7228 16.0457 18.102 15.7377 18.3257C15.4297 18.5494 15.0215 18.5789 14.6845 18.4017L9.99999 15.9381L5.31544 18.4017C4.97852 18.5789 4.57023 18.5494 4.26225 18.3257C3.95428 18.102 3.80003 17.7228 3.86438 17.3476L4.7588 12.1327L0.968922 8.44132C0.696304 8.17579 0.598031 7.77853 0.715409 7.41653C0.832787 7.05452 1.14547 6.79051 1.52203 6.73547L6.76073 5.96976L9.10328 1.224C9.27175 0.882698 9.61937 0.666626 9.99999 0.666626Z" />
+		</symbol>
+		<symbol id="star-stroke" viewbox="0 0 20 19">
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M9.99999 0.666626C10.3806 0.666626 10.7282 0.882698 10.8967 1.224L13.2393 5.96976L18.4779 6.73547C18.8545 6.79051 19.1672 7.05452 19.2846 7.41653C19.4019 7.77853 19.3037 8.17579 19.0311 8.44132L15.2412 12.1327L16.1356 17.3476C16.1999 17.7228 16.0457 18.102 15.7377 18.3257C15.4297 18.5494 15.0215 18.5789 14.6845 18.4017L9.99999 15.9381L5.31544 18.4017C4.97852 18.5789 4.57023 18.5494 4.26225 18.3257C3.95428 18.102 3.80003 17.7228 3.86438 17.3476L4.7588 12.1327L0.968922 8.44132C0.696304 8.17579 0.598031 7.77853 0.715409 7.41653C0.832787 7.05452 1.14547 6.79051 1.52203 6.73547L6.76073 5.96976L9.10328 1.224C9.27175 0.882698 9.61937 0.666626 9.99999 0.666626ZM9.99999 3.92588L8.3217 7.32592C8.17616 7.62076 7.89497 7.82522 7.56962 7.87278L3.81507 8.42156L6.53105 11.0669C6.76693 11.2967 6.87459 11.6278 6.81893 11.9523L6.17817 15.6883L9.53454 13.9232C9.82592 13.77 10.1741 13.77 10.4654 13.9232L13.8218 15.6883L13.181 11.9523C13.1254 11.6278 13.233 11.2967 13.4689 11.0669L16.1849 8.42156L12.4304 7.87278C12.105 7.82522 11.8238 7.62076 11.6783 7.32592L9.99999 3.92588Z" />
 		</symbol>
 	</svg>
 	<!-- /svg-sprite -->
@@ -196,7 +206,7 @@
 				</div>
 
 				<div class="progress-container">
-					<div class="progress-bar progress" id="progressBar"></div>
+					<div class="progress-bar" id="progressBar"></div>
 				</div>
 
 			</nav>
@@ -246,12 +256,11 @@
 			</nav>
 		</header>
 
-
 		<section class="content">
 			<div class="container">
 				<div class="row">
-					<div class="col-xl-8 col-lg-12">
-						<section class="article">
+					<div class="col-xl-8 col-lg-8">
+						<div class="article">
 							<header class="article__top">
 								<div class="article__img">
 									<img src="img/slider/slide.jpg" alt="photo">
@@ -279,16 +288,422 @@
 												<img src="icons/article/print.svg" alt="print">
 											</a>
 										</div>
-
 									</div>
 								</div>
-								<h1 class="article__title">Центробанк продолжает высасывать денежные соки из российской экономики</h1>
-								<p class="article__descr">Разногласия между западными военными и политиками в отношении помощи Украине расшатывают фундамент НАТО</p>
+								<h1 class="article__title">Центробанк продолжает высасывать денежные соки из российской
+									экономики</h1>
+								<p class="article__descr">Разногласия между западными военными и политиками в отношении помощи
+									Украине расшатывают фундамент НАТО</p>
 							</header>
-						</section>
+							<div class="banners">
+								<div class="row">
+									<div class="ol-xl-6 col-lg-6 col-md-6">
+										<div class="banners-item">
+											<div class="banners-item__title">Больше 10 000 подписчиков!</div>
+											<div class="banners-item__descr">Подпишитесь на наш <span>Телеграм</span> <br> Больше
+												аналитики, больше новостей!</div>
+											<img data-aos="flip-left" class="banners-item__icon" src="icons/article/banners/telegram.svg"
+												alt="telegram">
+											<a href="https://t.me/fsk_today" target="_blank" class="btn">Подписаться</a>
+										</div>
+									</div>
+									<div class="ol-xl-6 col-lg-6 col-md-6">
+										<div class="banners-item">
+											<div class="banners-item__title">Больше 80 000 подписчиков!</div>
+											<div class="banners-item__descr">Подпишитесь на <span>Яндекс Дзен</span> <br> Больше
+												аналитики, больше новостей!</div>
+											<img data-aos="flip-left" class="banners-item__icon" src="icons/article/banners/zen.svg" alt="dzen">
+											<a href="https://zen.yandex.ru/media/fondsk.ru" target="_blank"
+												class="btn">Подписаться</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="article__content">
+								<div class="social-v-share">
+
+									<a class="social-v-share__link" href="#" target="_blank" title="Телеграм">
+										<img src="icons/sidebar/telegram.svg" alt="telegram">
+									</a>
+
+									<a class="social-v-share__link" href="#" target="_blank" title="ВКонтакте">
+										<img src="icons/sidebar/vk.svg" alt="vkontakte">
+									</a>
+
+									<a class="social-v-share__link" href="#" target="_blank" title="Одноклассники">
+										<img src="icons/sidebar/ok.svg" alt="odnoklassniki">
+									</a>
+
+									<a class="social-v-share__link" href="#" target="_blank" title="Твиттер">
+										<img src="icons/sidebar/twitter.svg" alt="twitter">
+									</a>
+
+									<a class="social-v-share__link" href="#" title="Ссылка">
+										<img src="icons/article/link.svg" alt="Ссылка">
+									</a>
+								</div>
+
+								<p>Я уже писал об экономических итогах 2022 года в России. Судя по предварительным оценкам,
+									падения промышленного производства в стране удалось избежать. По мнению экспертов, этого
+									удалось достичь благодаря активизации военной промышленности России, а активизация произошла
+									в результате увеличения государственного оборонного заказа. Правительство пытается хоть
+									как-то проводить военно-экономическую мобилизацию.</p>
+								<p>И чтобы мобилизация была более энергичной, необходимо участие в ней Банка России. А он до сих
+									пор не проявляет признаков такого участия. Более того, предотвращение падения промышленного
+									производства в 2022 году произошло вопреки действиям Банка России, такому падению
+									способствовавшие. Тормозилась экономика страны. Оно осуществляется с помощью такого
+									инструмента, как ключевая ставка.</p>
+								<p>После начала санкционной войны, 28 февраля 2022 года, Банк России резко поднял ключевую
+									ставку до 20%. К сентябрю в результате нескольких снижений ключевая ставка опустилась до 7,5%
+									и до настоящего времени остается на этом уровне. Для промышленности и других секторов
+									экономики это запретительный уровень. Кредиты коммерческих банков с процентными ставками,
+									привязанными к столь высокой ключевой ставке, доступны только спекулянтам. Их нельзя
+									использовать для финансирования долгосрочных инвестиционных проектов, столь необходимых для
+									импортозамещения и военно-экономической мобилизации. При столь высокой ключевой ставке Банк
+									России утрачивает присущую любому нормальному центробанку функцию кредитора.</p>
+
+								<blockquote class="article__block article__quote article__quote--hor">По мнению экспертов, этого
+									удалось достичь благодаря активизации военной промышленности России</blockquote>
+
+								<p>Спроса на дорогие кредиты Банка России просто нет.</p>
+								<p>Например, на конец февраля доля активов Банка России, которые были размещены в коммерческих
+									банках (кредиты и депозиты), равнялась 17,7%. Это свидетельствует о том, что функция Банка
+									России как кредитора мизерная. Основная часть активов на тот момент была размещена в
+									иностранной валюте. Казалось бы, <strong>Банку России надо было срочно отходить</strong> от
+									практики покупки валюты (кредитования экономик тех стран, валюты которых покупаются) и
+									переходить к кредитованию отечественной экономики. А что мы видим, скажем, через месяц после
+									начала СВО, в конце марта? </p>
+
+								<div class="article__block article__block--full-width article-imp">
+									<div class="article-imp__title">Важное по этой теме:</div>
+
+									<div class="article-imp__wrapper">
+										<div class="article-imp__item">
+											<a class="article-imp__img" href="#"><img src="img/article/news_1.jpg" alt="photo"></a>
+											<a href="#" class="article-imp__link">США стали главным противником России на поле
+												боя</a>
+										</div>
+
+										<div class="article-imp__item">
+											<a class="article-imp__img" href="#"><img src="img/article/news_2.jpg" alt="photo"></a>
+											<a href="#" class="article-imp__link">Америка становится первым экспроприатором</a>
+										</div>
+									</div>
+								</div>
+								<p>Абсолютный объем средств Банка России, размещенных в кредитных организациях, снизился более
+									чем вдвое (на 56%), а доля таких средств в активах Банка России скукожилась до 10,7%.
+									На конец октября эта доля опустилась до 8,7%.</p>
+								<p><strong>Какой-либо внятной денежно-кредитной политики Банка России в 2022 году
+										не просматривалось.</strong></p>
+
+								<h2 class="article__subtitle">Спроса на дорогие кредиты Банка России</h2>
+
+								<p>После начала санкционной войны, 28 февраля 2022 года, Банк России резко поднял ключевую
+									ставку до 20%. К сентябрю в результате нескольких снижений ключевая ставка опустилась до 7,5%
+									и до настоящего времени остается на этом уровне. Для промышленности и других секторов
+									экономики это запретительный уровень. Кредиты коммерческих банков с процентными ставками,
+									привязанными к столь высокой ключевой ставке, доступны только спекулянтам. Их нельзя
+									использовать для финансирования долгосрочных инвестиционных проектов, столь необходимых для
+									импортозамещения и военно-экономической мобилизации. При столь высокой ключевой ставке Банк
+									России утрачивает присущую любому нормальному центробанку функцию кредитора.</p>
+
+								<div class="article__block article__block--left">
+									<figure>
+										<img class="article__img article__img--left" src="img/article/gerb.jpg" alt="photo">
+										<figcaption class="article__caption">Привычная деятельность Банка России по покупке
+											иностранной валюты была прервана заморозкой большей части валютных резервов Центробанка
+										</figcaption>
+									</figure>
+								</div>
+
+								<p>Например, на конец февраля доля активов Банка России, которые были размещены в коммерческих
+									банках (кредиты и депозиты), равнялась 17,7%. Это свидетельствует о том, что функция Банка
+									России как кредитора мизерная. Основная часть активов на тот момент была размещена
+									в иностранной валюте. Казалось бы, Банку России надо было срочно отходить от практики покупки
+									валюты.</p>
+								<p>Привычная деятельность Банка России по покупке иностранной валюты была прервана заморозкой
+									большей части валютных резервов Центробанка. А перехода к кредитованию российской экономики
+									так и не произошло. Понять, чем занимается Банк России в последние месяцы, стало особенно
+									сложно, поскольку он перестал публиковать месячные балансы, что до этого делал регулярно. <a
+										href="#" class="article__link">Последний выложенный на сайте Банка России баланс </a>—
+									на конец октября прошлого года.</p>
+
+								<blockquote class="article__block article__quote article__quote--vert">По мнению экспертов,
+									этого удалось достичь благодаря активизации военной промышленности России </blockquote>
+
+								<p>Привычная деятельность Банка России по покупке иностранной валюты была прервана заморозкой
+									большей части валютных резервов Центробанка. А перехода к кредитованию российской экономики
+									так и не произошло. Понять, чем занимается Банк России в последние месяцы, стало особенно
+									сложно, поскольку он перестал публиковать месячные балансы, что до этого делал регулярно.
+									Последний выложенный на сайте Банка России баланс — на конец октября прошлого года.</p>
+
+								<h2 class="article__subtitle">Спроса на дорогие кредиты Банка России</h2>
+
+								<P>Привычная деятельность Банка России по покупке иностранной валюты была прервана заморозкой
+									большей части валютных резервов Центробанка. А перехода к кредитованию российской экономики
+									так и не произошло. Понять, чем занимается Банк России в последние месяцы, стало особенно
+									сложно, поскольку он перестал публиковать месячные балансы, что до этого делал регулярно.
+									Последний выложенный на сайте Банка России баланс — на конец октября прошлого года.</P>
+
+								<div class="article__block">
+									<figure>
+										<img class="article__img article__img--left" src="img/article/bank.jpg" alt="photo">
+										<figcaption class="article__caption">Привычная деятельность Банка России по покупке
+											иностранной валюты была прервана заморозкой большей части валютных резервов Центробанка
+										</figcaption>
+									</figure>
+								</div>
+
+								<p>После начала санкционной войны, 28 февраля 2022 года, Банк России резко поднял ключевую
+									ставку до 20%. К сентябрю в результате нескольких снижений ключевая ставка опустилась до 7,5%
+									и до настоящего времени остается на этом уровне. Для промышленности и других секторов
+									экономики это запретительный уровень. Кредиты коммерческих банков с процентными ставками,
+									привязанными к столь высокой ключевой ставке, доступны только спекулянтам. Их нельзя
+									использовать для финансирования долгосрочных инвестиционных проектов, столь необходимых для
+									импортозамещения и военно-экономической мобилизации. При столь высокой ключевой ставке Банк
+									России утрачивает присущую любому нормальному центробанку функцию кредитора.</p>
+
+								<div class="article__block article__block--full-width">
+									<figure>
+										<img class="article__img article__img--left" src="img/article/people.jpg" alt="photo">
+										<figcaption class="article__caption">Привычная деятельность Банка России по покупке
+											иностранной валюты была прервана заморозкой большей части валютных резервов Центробанка
+										</figcaption>
+									</figure>
+								</div>
+
+								<p>После начала санкционной войны, 28 февраля 2022 года, Банк России резко поднял ключевую
+									ставку до 20%. К сентябрю в результате нескольких снижений ключевая ставка опустилась до 7,5%
+									и до настоящего времени остается на этом уровне. Для промышленности и других секторов
+									экономики это запретительный уровень. Кредиты коммерческих банков с процентными ставками,
+									привязанными к столь высокой ключевой ставке, доступны только спекулянтам. Их нельзя
+									использовать для финансирования долгосрочных инвестиционных проектов, столь необходимых для
+									импортозамещения и военно-экономической мобилизации. При столь высокой ключевой ставке Банк
+									России утрачивает присущую любому нормальному центробанку функцию кредитора.</p>
+
+								<h3 class="article__subtitle">Спроса на дорогие кредиты Банка России</h3>
+
+								<ul class="article-list article-list--ul">
+									<li class="article-list__item article-list__item--ul">После начала санкционной войны,
+										28 февраля 2022 года, Банк России резко поднял ключевую ставку до 20%.</li>
+									<li class="article-list__item article-list__item--ul">Их нельзя использовать для
+										финансирования долгосрочных инвестиционных проектов, столь необходимых для
+										импортозамещения</li>
+									<li class="article-list__item article-list__item--ul">Для промышленности и других секторов
+										экономики это запретительный уровень. Кредиты коммерческих банков с процентными ставками
+									</li>
+								</ul>
+
+								<h3 class="article__subtitle">Спроса на дорогие кредиты Банка России</h3>
+
+
+								<ol class="article-list article-list--ol">
+									<li class="article-list__item article-list__item--ol">После начала санкционной войны,
+										28 февраля 2022 года, Банк России резко поднял ключевую ставку до 20%.</li>
+									<li class="article-list__item article-list__item--ol">Их нельзя использовать для
+										финансирования долгосрочных инвестиционных проектов, столь необходимых для
+										импортозамещения</li>
+									<li class="article-list__item article-list__item--ol">Для промышленности и других секторов
+										экономики это запретительный уровень. Кредиты коммерческих банков с процентными ставками
+									</li>
+								</ol>
+							</div>
+
+							<footer class="article__bottom">
+
+								<div class="rating">
+									<div class="rating__title">Оцените статью:</div>
+									<div class="rating__wrapper">
+										<svg class="rating__icon rating__icon--filled">
+											<use xlink:href="#star-filled"></use>
+										</svg>
+										<svg class="rating__icon rating__icon--filled">
+											<use xlink:href="#star-filled"></use>
+										</svg>
+										<svg class="rating__icon rating__icon--filled">
+											<use xlink:href="#star-filled"></use>
+										</svg>
+										<svg class="rating__icon rating__icon--filled">
+											<use xlink:href="#star-filled"></use>
+										</svg>
+										<svg class="rating__icon rating__icon--stroke">
+											<use xlink:href="#star-stroke"></use>
+										</svg>
+										<span class="rating__counter">4.0</span>
+									</div>
+								</div>
+
+								<div class="banners">
+									<div class="row">
+										<div class="col-xl-6 col-lg-6 col-md-6">
+											<div class="banners-item">
+												<div class="banners-item__title">Больше 10 000 подписчиков!</div>
+												<div class="banners-item__descr">Подпишитесь на наш <span>Телеграм</span> <br>
+													Больше аналитики, больше новостей!</div>
+												<img data-aos="flip-left" class="banners-item__icon"
+													src="icons/article/banners/telegram.svg" alt="telegram">
+												<a href="https://t.me/fsk_today" target="_blank" class="btn">Подписаться</a>
+											</div>
+										</div>
+										<div class="col-xl-6 col-lg-6 col-md-6">
+											<div class="banners-item">
+												<div class="banners-item__title">Больше 80 000 подписчиков!</div>
+												<div class="banners-item__descr">Подпишитесь на <span>Яндекс Дзен</span> <br> Больше
+													аналитики, больше новостей!</div>
+												<img data-aos="flip-left" class="banners-item__icon" src="icons/article/banners/zen.svg" alt="dzen">
+												<a href="https://zen.yandex.ru/media/fondsk.ru" target="_blank"
+													class="btn">Подписаться</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="article-tags">
+									<div class="row">
+										<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+											<div class="article-tags__wrapper">
+												<a class="article-tags__item" href="#">Россия</a>
+												<a class="article-tags__item" href="#">Банк России</a>
+												<a class="article-tags__item" href="#">Золото</a>
+											</div>
+										</div>
+										<div class="ol-xl-6 col-lg-6 col-md-6 col-sm-12">
+											<div class="social-h-share">
+
+												<a class="social-h-share__link" href="#" target="_blank" title="Телеграм">
+													<img src="icons/sidebar/telegram.svg" alt="telegram">
+												</a>
+
+												<a class="social-h-share__link" href="#" target="_blank" title="ВКонтакте">
+													<img src="icons/sidebar/vk.svg" alt="vkontakte">
+												</a>
+
+												<a class="social-h-share__link" href="#" target="_blank" title="Одноклассники">
+													<img src="icons/sidebar/ok.svg" alt="odnoklassniki">
+												</a>
+
+												<a class="social-h-share__link" href="#" target="_blank" title="Твиттер">
+													<img src="icons/sidebar/twitter.svg" alt="twitter">
+												</a>
+
+												<a class="social-h-share__link" href="#" title="Ссылка">
+													<img src="icons/article/link.svg" alt="Ссылка">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</footer>
+
+						</div>
+
+						<div class="short-news news-block">
+							<a href="#" class="label-link short-news__label-link">статьи по теме:</a>
+							<div class="short-news__content">
+
+								<div class="row">
+									<!-- article -->
+									<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+										<article class="news-feed__item short-news__item">
+											<a href="#" class="news-feed__img short-news__img">
+												<img src="img/article/short/img1.jpg" alt="photo">
+											</a>
+											<div class="meta">
+												<span class="data meta__item">07.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+											</div>
+											<h3 class="news-feed__header short-news__header">
+												<a href="#">Китай показал миру, что Америка вздрогнула</a>
+											</h3>
+										</article>
+									</div>
+
+									<!-- article -->
+									<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+										<article class="news-feed__item short-news__item">
+											<a href="#" class="news-feed__img short-news__img">
+												<img src="img/article/short/img2.jpg" alt="photo">
+											</a>
+											<div class="meta">
+												<span class="data meta__item">07.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+											</div>
+											<h3 class="news-feed__header short-news__header">
+												<a href="#">Специальная военная операция ВС РФ и события на Украине 27 марта,
+													вечер</a>
+											</h3>
+										</article>
+									</div>
+
+									<!-- article -->
+									<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+										<article class="news-feed__item short-news__item">
+											<a href="#" class="news-feed__img short-news__img">
+												<img src="img/article/short/img3.jpg" alt="photo">
+											</a>
+											<div class="meta">
+												<span class="data meta__item">07.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+											</div>
+											<h3 class="news-feed__header short-news__header">
+												<a href="#">Румынские фермеры платят за военную помощь Украине из своего кармана</a>
+											</h3>
+										</article>
+									</div>
+
+									<!-- article -->
+									<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+										<article class="news-feed__item short-news__item">
+											<a href="#" class="news-feed__img short-news__img">
+												<img src="img/article/short/img4.jpg" alt="photo">
+											</a>
+											<div class="meta">
+												<span class="data meta__item">07.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+											</div>
+											<h3 class="news-feed__header short-news__header">
+												<a href="#">На смену «арабской весне» по-американски идет консолидация Ближнего
+													Востока по-китайски</a>
+											</h3>
+										</article>
+									</div>
+
+									<!-- article -->
+									<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+										<article class="news-feed__item short-news__item">
+											<a href="#" class="news-feed__img short-news__img">
+												<img src="img/article/short/img5.jpg" alt="photo">
+											</a>
+											<div class="meta">
+												<span class="data meta__item">07.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+											</div>
+											<h3 class="news-feed__header short-news__header">
+												<a href="#">Серьёзная валютная услуга Пекину со стороны Москвы</a>
+											</h3>
+										</article>
+									</div>
+
+									<!-- article -->
+									<div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+										<article class="news-feed__item short-news__item">
+											<a href="#" class="news-feed__img short-news__img">
+												<img src="img/article/short/img6.jpg" alt="photo">
+											</a>
+											<div class="meta">
+												<span class="data meta__item">07.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+											</div>
+											<h3 class="news-feed__header short-news__header">
+												<a href="#">Путешествиям из Москвы в Рязань через Бельгию скоро будет положен
+													конец</a>
+											</h3>
+										</article>
+									</div>
+
+								</div>
+
+							</div>
+						</div>
 					</div>
 
-					<div class="col-xl-4 col-lg-12 no-print">
+					<div class="col-xl-4 col-lg-4 no-print">
 						<aside class="sidebar">
 
 							<div class="news-block aside-item">
@@ -490,8 +905,6 @@
 				</div>
 			</div>
 
-
-
 		</section>
 
 		<footer class="footer">
@@ -656,6 +1069,7 @@
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="js/libs/slick.min.js"></script>
 	<script src="js/script.js"></script>
 </body>

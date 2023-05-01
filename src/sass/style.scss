@@ -5,9 +5,16 @@
 @import 'base/mixins';
 
 /* Default styles */
+
+html {
+	overflow:auto;	
+}
+body {
+	overflow:visible;
+	height: 100%;
+}
 html, body {
 	max-width: 100%;
-	overflow-x: hidden;
 }
 body {
 	margin: 0;
@@ -45,11 +52,13 @@ p {
 	line-height: 27px;
 	color: $t_dark;
 }
+strong {
+	font-weight: 700;
+}
 .page {
 	height: 100vh;
 }
 .content {
-	// flex: 1;
 	padding: 40px 0 80px;
 	&__top {
 		margin-bottom: 80px;
@@ -73,7 +82,8 @@ p {
 @import "blocks/scroll";
 @import "blocks/sidebar";
 @import "blocks/article";
-
+@import "blocks/rating";
+@import "blocks/short-news";
 
 @import "blocks/media";
 

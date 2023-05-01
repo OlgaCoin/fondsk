@@ -7,6 +7,8 @@
 		z-index: -1;
 	}
 	&__img {
+		border-radius: $radius_sm;
+		overflow: hidden;
 		& > img {
 			max-height: 560px;
 			width: auto;

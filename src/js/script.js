@@ -1,8 +1,6 @@
 $(document).ready(function () {
 
-
-
-	// slider
+	// slick slider
 
 	$('.top-slider--for').slick({
 		slidesToShow: 1,
@@ -32,7 +30,7 @@ $(document).ready(function () {
 
 	// sticky menu + toTop
 
-	$('body,html').scroll(function () {
+	$(window).scroll(function () {
 
 		if ($(this).scrollTop() >= 60) {
 			$('.header__nav').addClass('fixed');
@@ -48,7 +46,7 @@ $(document).ready(function () {
 	});
 
 	$('.toTop').click(function () {
-		$('body,html').animate({ scrollTop: 0 }, 2000);
+		$('html').animate({ scrollTop: 0 }, 2000);
 	});
 
 	// burger
@@ -76,24 +74,24 @@ $(document).ready(function () {
 		}
 	});
 
+	// aos - flip animation
 
-	// function progressBarScroll() {
-	// 	let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
-	// 		height =
-	// 			document.documentElement.scrollHeight -
-	// 			document.documentElement.clientHeight,
-	// 		scrolled = (winScroll / height) * 100;
-	// 	document.getElementById("progressBar").style.width = scrolled + "%";
-	// }
+	AOS.init();
 
-	// window.onscroll = function () {
-	// 	progressBarScroll();
-	// };
+	// progress bar
 
+	function progressBarScroll() {
+		let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
+			height =
+				document.documentElement.scrollHeight -
+				document.documentElement.clientHeight,
+			scrolled = (winScroll / height) * 100;
+		document.getElementById("progressBar").style.width = scrolled + "%";
+	}
 
-
-
-
+	window.onscroll = function () {
+		progressBarScroll();
+	};
 
 });
 
