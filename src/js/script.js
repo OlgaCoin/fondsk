@@ -90,8 +90,37 @@ $(document).ready(function () {
 	}
 
 	window.onscroll = function () {
-		progressBarScroll();
+		if (document.getElementById("progressBar") !== null) {
+			progressBarScroll();
+		}
 	};
+
+	// font size switcher
+
+	function change_size(element, size) {
+		var current = parseInt(element.css('font-size'));
+		if (size == 'minus') {
+			var new_size = current - 2;
+			console.log(new_size);
+		} else if (size == 'plus') {
+			var new_size = current + 2;
+			console.log(new_size);
+		}
+		element.css('font-size', new_size + 'px');
+	}
+
+	var par = $('.article__content > p');
+	$('a.minus').click(function (e) {
+		e.preventDefault();
+		change_size(par, 'minus');
+	});
+
+	var par = $('.article__content > p');
+	$('a.plus').click(function (e) {
+		e.preventDefault();
+		change_size(par, 'plus');
+	});
+
 
 });
 

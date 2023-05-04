@@ -70,6 +70,9 @@
 		position: relative;
 		margin-left: 110px;
 		padding-bottom: 60px;
+		& > p {			
+			font-size: 17px;
+		}
 	}
 	&__block {
 		margin: 55px 0 50px;
@@ -255,6 +258,7 @@
 			padding: 7px 10px;
 			margin-right: 15px;
 			margin-bottom: 10px;
+			border-radius: $radius_sm;
 			&:hover {
 				color: $t_dark;
 			}
