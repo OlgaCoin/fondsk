@@ -70,9 +70,15 @@
 		position: relative;
 		margin-left: 110px;
 		padding-bottom: 60px;
-		& > p {			
+		& > p, & li  {			
 			font-size: 17px;
 		}
+		& li {
+			line-height: 27px;
+		}
+		& > p.article__caption {			
+			font-size: 13px;
+		}		
 	}
 	&__block {
 		margin: 55px 0 50px;
@@ -82,13 +88,11 @@
 		}
 		&--left {
 			margin-left: -110px;
-			width: 60%;
+			margin-right: 65px;
+			width: 50%;
 			float: left;
 			margin-top: 0;
 			margin-bottom: 20px;
-			& figure {
-				margin-right: 65px;
-			}
 		}
 	}
 	&__caption {

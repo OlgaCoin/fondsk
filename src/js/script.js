@@ -109,18 +109,17 @@ $(document).ready(function () {
 		element.css('font-size', new_size + 'px');
 	}
 
-	var par = $('.article__content > p');
+	var par = $('.article__content > p, .article__content li');
 	$('a.minus').click(function (e) {
 		e.preventDefault();
 		change_size(par, 'minus');
 	});
 
-	var par = $('.article__content > p');
+	var par = $('.article__content > p, .article__content li');
 	$('a.plus').click(function (e) {
 		e.preventDefault();
 		change_size(par, 'plus');
 	});
-
 
 });
 
