@@ -1,0 +1,16 @@
+.search-details {
+	@include caption;
+	margin-top: 25px;
+}
+.search-item {
+	margin-bottom: 50px;
+	&__title {
+		margin-bottom: 23px;
+		& > a {
+			transition: $trans;
+			&:hover {
+				color: $primary;
+			}
+		}
+	}
+}

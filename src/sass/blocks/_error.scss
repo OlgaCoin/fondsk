@@ -1,0 +1,27 @@
+.error-wrapper {
+	background-image: linear-gradient(to right, rgba(255,255,255, 0.4) 0 100%), url('../img/placeholder.svg');
+	background-size: cover;
+	background-position: center center;
+	min-height: 100vh;
+	text-align: center;
+	padding-top: 120px;
+	overflow: visible;
+	& span {
+		font-family: 'Exo 2';
+		font-weight: 800;
+		font-size: 360px;
+		line-height: 1;
+		color: #383838;
+		display: inline-block;
+	}
+	& p {
+		margin-top: 80px;
+		font-size: 20px;
+		line-height: 36px;
+	}
+	& a {
+		display: inline-flex;
+		margin-top: 40px;
+		width: 284px;
+	}
+}

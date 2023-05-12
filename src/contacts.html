@@ -246,19 +246,25 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-8 col-lg-8">
-						<h1 class="page__title">О нас</h1>
+						<h1 class="page__title">Свяжитесь с нами</h1>
 						<div class="page__content">
-							<p>Фонд стратегической культуры — это уникальная интернет-площадка для аналитики, комментариев,
-								дискуссий по широкому кругу проблем международных отношений, мировой экономики, глобальной
-								безопасности, истории, культуры, страноведения.</p>
-							<p>С 2005 года на сайте опубликованы тысячи материалов, принадлежащих перу более сотни авторов,
-								известных своей экспертной квалификацией и независимостью суждений.
-								Фонд стратегической культуры постоянно стремится к расширению тематики обсуждаемых проблем,
-								поиску новых подходов в освещении событий и явлений.</p>
-							<p>Работая над обновлением сайта, мы постарались сделать его более удобным для наших пользователей,
-								создали сообщество Фонда стратегической культуры в социальных сетях ВКонтакте, Одноклассники,
-								Telegram, Яндекс Дзен, куда и приглашаем всех, кому интересен наш проект.</p>
-							<p><strong>Искренне Ваш,<br>Владимир Максименко, главный редактор</strong></p>
+
+							<form class="contacts-form" action="/" method="post">
+								<div class="contacts-form__item">
+									<input class="contacts-form__input" name="email" placeholder="Ваш E-mail" type="email"
+										required>
+								</div>
+								<div class="contacts-form__item">
+									<input class="contacts-form__input" name="name" placeholder="Ваше имя" type="text" required>
+								</div>
+								<div class="contacts-form__item">
+									<textarea class="contacts-form__input contacts-form__input--mess"
+										placeholder="Ваше сообщение" name="message" required></textarea>
+								</div>
+								<span>Обязательное поле</span>
+								<input class="contacts-form__submit btn" type="submit" value="Отправить">
+							</form>
+
 						</div>
 					</div>
 

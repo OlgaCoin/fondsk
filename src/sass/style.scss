@@ -33,6 +33,9 @@ button, button:active, button:focus {
 	border: none;
 	outline: none;
 }
+input:focus, textarea:focus {
+	outline:0;
+}
 a, a:hover {
 	text-decoration: none;
 }
@@ -57,11 +60,17 @@ strong {
 }
 .page {
 	height: 100vh;
+	&__top {
+		margin-bottom: 55px;
+	}
 	&__title {
 		margin-bottom: 50px;
 	}
-	&__content p {
-		margin-bottom: 38px;
+	&__content {
+		margin-bottom: 55px;
+		& p {
+			margin-bottom: 38px;
+		}		
 	}
 }
 .content {
@@ -91,7 +100,11 @@ strong {
 @import "blocks/rating";
 @import "blocks/short-news";
 @import "blocks/print";
-
+@import "blocks/abc";
+@import "blocks/author-block";
+@import "blocks/paginator";
+@import "blocks/search";
+@import "blocks/error";
 @import "blocks/media";
 
 

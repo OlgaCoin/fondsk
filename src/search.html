@@ -22,7 +22,10 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
+
 </head>
 
 <body>
@@ -67,6 +70,14 @@
 		<symbol id="angle-up" viewbox="0 0 24 24">
 			<path
 				d="M17,13.41,12.71,9.17a1,1,0,0,0-1.42,0L7.05,13.41a1,1,0,0,0,0,1.42,1,1,0,0,0,1.41,0L12,11.29l3.54,3.54a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29A1,1,0,0,0,17,13.41Z" />
+		</symbol>
+		<symbol id="star-filled" viewbox="0 0 20 19">
+			<path
+				d="M9.99999 0.666626C10.3806 0.666626 10.7282 0.882698 10.8967 1.224L13.2393 5.96976L18.4779 6.73547C18.8545 6.79051 19.1672 7.05452 19.2846 7.41653C19.4019 7.77853 19.3037 8.17579 19.0311 8.44132L15.2412 12.1327L16.1356 17.3476C16.1999 17.7228 16.0457 18.102 15.7377 18.3257C15.4297 18.5494 15.0215 18.5789 14.6845 18.4017L9.99999 15.9381L5.31544 18.4017C4.97852 18.5789 4.57023 18.5494 4.26225 18.3257C3.95428 18.102 3.80003 17.7228 3.86438 17.3476L4.7588 12.1327L0.968922 8.44132C0.696304 8.17579 0.598031 7.77853 0.715409 7.41653C0.832787 7.05452 1.14547 6.79051 1.52203 6.73547L6.76073 5.96976L9.10328 1.224C9.27175 0.882698 9.61937 0.666626 9.99999 0.666626Z" />
+		</symbol>
+		<symbol id="star-stroke" viewbox="0 0 20 19">
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M9.99999 0.666626C10.3806 0.666626 10.7282 0.882698 10.8967 1.224L13.2393 5.96976L18.4779 6.73547C18.8545 6.79051 19.1672 7.05452 19.2846 7.41653C19.4019 7.77853 19.3037 8.17579 19.0311 8.44132L15.2412 12.1327L16.1356 17.3476C16.1999 17.7228 16.0457 18.102 15.7377 18.3257C15.4297 18.5494 15.0215 18.5789 14.6845 18.4017L9.99999 15.9381L5.31544 18.4017C4.97852 18.5789 4.57023 18.5494 4.26225 18.3257C3.95428 18.102 3.80003 17.7228 3.86438 17.3476L4.7588 12.1327L0.968922 8.44132C0.696304 8.17579 0.598031 7.77853 0.715409 7.41653C0.832787 7.05452 1.14547 6.79051 1.52203 6.73547L6.76073 5.96976L9.10328 1.224C9.27175 0.882698 9.61937 0.666626 9.99999 0.666626ZM9.99999 3.92588L8.3217 7.32592C8.17616 7.62076 7.89497 7.82522 7.56962 7.87278L3.81507 8.42156L6.53105 11.0669C6.76693 11.2967 6.87459 11.6278 6.81893 11.9523L6.17817 15.6883L9.53454 13.9232C9.82592 13.77 10.1741 13.77 10.4654 13.9232L13.8218 15.6883L13.181 11.9523C13.1254 11.6278 13.233 11.2967 13.4689 11.0669L16.1849 8.42156L12.4304 7.87278C12.105 7.82522 11.8238 7.62076 11.6783 7.32592L9.99999 3.92588Z" />
 		</symbol>
 	</svg>
 	<!-- /svg-sprite -->
@@ -194,6 +205,7 @@
 					</div>
 
 				</div>
+
 			</nav>
 
 			<nav class="mobile-nav">
@@ -241,29 +253,289 @@
 			</nav>
 		</header>
 
-
 		<section class="content">
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-8 col-lg-8">
-						<h1 class="page__title">О нас</h1>
+						<div class="page__top">
+
+							<h1 class="page__title">Поиск по сайту</h1>
+
+							<div class="page__search search page__search--fw">
+								<form class="search-form" action="/search" method="get">
+									<input type="text" placeholder="Поиск" class="search-form__input search-form__input--fw"
+										name="q">
+									<button type="submit" class="search-form__submit">
+										<svg class="search-form__icon">
+											<use xlink:href="#search"></use>
+										</svg>
+									</button>
+								</form>
+							</div>
+							<div class="search-details">
+								Найдено результатов: <span>117</span>
+							</div>
+
+						</div>
+
 						<div class="page__content">
-							<p>Фонд стратегической культуры — это уникальная интернет-площадка для аналитики, комментариев,
-								дискуссий по широкому кругу проблем международных отношений, мировой экономики, глобальной
-								безопасности, истории, культуры, страноведения.</p>
-							<p>С 2005 года на сайте опубликованы тысячи материалов, принадлежащих перу более сотни авторов,
-								известных своей экспертной квалификацией и независимостью суждений.
-								Фонд стратегической культуры постоянно стремится к расширению тематики обсуждаемых проблем,
-								поиску новых подходов в освещении событий и явлений.</p>
-							<p>Работая над обновлением сайта, мы постарались сделать его более удобным для наших пользователей,
-								создали сообщество Фонда стратегической культуры в социальных сетях ВКонтакте, Одноклассники,
-								Telegram, Яндекс Дзен, куда и приглашаем всех, кому интересен наш проект.</p>
-							<p><strong>Искренне Ваш,<br>Владимир Максименко, главный редактор</strong></p>
+
+							<div class="search-item">
+								<h2 class="search-item__title"><a href="#">Российский налогоплательщик кредитует Центробанк</a>
+								</h2>
+								<p class="search-item__info">...Основная статья обязательств Банка России — эмитированные
+									наличные рубли. Вторая по величине статья — казенные деньги, которые Минфин...</p>
+							</div>
+
+							<div class="search-item">
+								<h2 class="search-item__title"><a href="#">Центробанк России в режиме полной свободы от
+										государства...</a></h2>
+								<p class="search-item__info">...каждый пункт ее требований: Золотовалютные резервы центробанка
+									постоянно прирастают. И в июле <strong>центробанк</strong> наверняка покажет рекордные
+									прирост ЗВР за 2019...</p>
+							</div>
+
+							<div class="search-item">
+								<h2 class="search-item__title"><a href="#">Минфин и Центробанк начинают валютные операции
+										в рамках...</a></h2>
+								<p class="search-item__info">... При новом бюджетном правиле даже трудно сказать, будет ли ФНБ
+									пополняться или расходоваться в начавшемся году, ибо крайне сложно ...</p>
+							</div>
+
+
+							<div class="search-item">
+								<h2 class="search-item__title"><a href="#">Российский налогоплательщик кредитует
+										Центробанк</a></h2>
+								<p class="search-item__info">...Основная статья обязательств Банка России — эмитированные
+									наличные рубли. Вторая по величине статья — казенные деньги, которые Минфин...</p>
+							</div>
+
+							<div class="search-item">
+								<h2 class="search-item__title"><a href="#">Центробанк России в режиме полной свободы от
+										государства...</a></h2>
+								<p class="search-item__info">...каждый пункт ее требований: Золотовалютные резервы
+									центробанка постоянно прирастают. И в июле <strong>центробанк</strong> наверняка покажет
+									рекордные прирост ЗВР за 2019...</p>
+							</div>
+
+							<div class="search-item">
+								<h2 class="search-item__title"><a href="#">Минфин и Центробанк начинают валютные операции
+										в рамках...</a></h2>
+								<p class="search-item__info">... При новом бюджетном правиле даже трудно сказать, будет ли
+									ФНБ пополняться или расходоваться в начавшемся году, ибо крайне сложно ...</p>
+							</div>
+
+							<div class="search-item">
+								<h2 class="search-item__title"><a href="#">Российский налогоплательщик кредитует
+										Центробанк</a></h2>
+								<p class="search-item__info">...Основная статья обязательств Банка России — эмитированные
+									наличные рубли. Вторая по величине статья — казенные деньги, которые Минфин...</p>
+							</div>
+
+							<div class="search-item">
+								<h2 class="search-item__title"><a href="#">Центробанк России в режиме полной свободы от
+										государства...</a></h2>
+								<p class="search-item__info">...каждый пункт ее требований: Золотовалютные резервы
+									центробанка постоянно прирастают. И в июле <strong>центробанк</strong> наверняка
+									покажет рекордные прирост ЗВР за 2019...</p>
+							</div>
+
+							<div class="search-item">
+								<h2 class="search-item__title"><a href="#">Минфин и Центробанк начинают валютные операции
+										в рамках...</a></h2>
+								<p class="search-item__info">... При новом бюджетном правиле даже трудно сказать, будет ли
+									ФНБ пополняться или расходоваться в начавшемся году, ибо крайне сложно ...</p>
+							</div>
+
+							<nav class="paginator">
+								<a href="#" class="paginator__item active">1</a>
+								<a href="#" class="paginator__item">2</a>
+								<a href="#" class="paginator__item">3</a>
+								<a href="#" class="paginator__item">4</a>
+								<a href="#" class="paginator__item">...</a>
+								<a href="#" class="paginator__item">последняя</a>
+							</nav>
+
 						</div>
 					</div>
 
 					<div class="col-xl-4 col-lg-4">
 						<aside class="sidebar">
+
+							<div class="news-block aside-item">
+								<div class="news-block__wrapper">
+									<a href="#" class="label-link">читают прямо сейчас</a>
+									<div class="news-block__content">
+
+										<div class="news-block__item">
+											<div class="meta news-block__meta">
+												<span class="data meta__item">13.04.2023 | <a href="#">игорь логинов</a>
+												</span>
+											</div>
+											<h3 class="news-block__header"><a href="#">Сербия прощается с Россией</a></h3>
+										</div>
+
+										<div class="news-block__item">
+											<div class="meta news-block__meta">
+												<span class="data meta__item">09.02.2023 | <a href="#">игорь логинов</a>
+												</span>
+											</div>
+											<h3 class="news-block__header"><a href="#">Высотные аэростаты над Украиной
+													рассеют
+													туман войны</a></h3>
+										</div>
+
+										<div class="news-block__item">
+											<div class="meta news-block__meta">
+												<span class="data meta__item">13.04.2023 | <a href="#">игорь логинов</a>
+												</span>
+											</div>
+											<h3 class="news-block__header"><a href="#">Как Киев смягчает последствия ударов
+													по
+													инфраструктуре</a></h3>
+										</div>
+										<hr>
+										<ul class="news-block__list">
+											<li>
+												<a href="#">Китай показал миру, что Америка вздрогнула</a>
+											</li>
+											<li>
+												<a href="#">Немецкая «ливерная колбаса» в большом спросе</a>
+											</li>
+											<li>
+												<a href="#">Центробанки мира готовятся к гигантскому финансовому
+													апокалипсису</a>
+											</li>
+											<li>
+												<a href="#">Немецкая «ливерная колбаса» в большом спросе</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="news-block aside-item">
+								<div class="news-block__wrapper">
+									<a href="#" class="label-link">мнение</a>
+									<div class="news-block__content">
+
+										<div class="news-block__item">
+											<div class="meta news-block__meta meta--mb meta--img">
+												<div class="meta--img__wrapper">
+													<span class="data meta__item">09.02.2023 | <a href="#">ВАЛЕРИЙ
+															БУРТ</a></span>
+													<h3 class="news-block__header"><a href="#">«Это не наша война!»</a></h3>
+												</div>
+												<img class="meta__img meta__img--right" src="img/author.jpg" alt="author">
+											</div>
+
+											<p>Польша — возмутитель спокойствия в Старом Свете со старыми повадками
+												«европейской»...
+											</p>
+										</div>
+
+										<hr>
+										<ul class="news-block__list">
+											<li>
+												<a href="#">Траектории экономического развития ведущих
+													стран мира за три десятилетия</a>
+											</li>
+											<li>
+												<a href="#">Станет ли когда-нибудь Марин Ле Пен
+													президентом Франции?</a>
+											</li>
+											<li>
+												<a href="#">США рвутся к стратегическому превосходству
+													в космосе</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="news-block aside-item">
+								<div class="news-block__wrapper">
+									<a href="#" class="label-link">события. комментарии</a>
+									<div class="news-block__content">
+
+										<div class="news-block__item">
+											<div class="meta news-block__meta">
+												<span class="data meta__item">13.04.2023 | <a href="#">игорь логинов</a>
+												</span>
+											</div>
+											<h3 class="news-block__header"><a href="#">Министерству обороны Польши не хватает
+													женщин</a></h3>
+											<p>Минобороны Польши обратилось в министерство образования по поводу призыва
+												в армию
+												женщин с...</p>
+										</div>
+
+										<div class="news-block__item">
+											<div class="meta news-block__meta">
+												<span class="data meta__item">09.02.2023 | <a href="#">игорь логинов</a>
+												</span>
+											</div>
+											<h3 class="news-block__header"><a href="#">Global Times: передача конфискованных
+													активов россиян Украине нанесёт тяжёлый удар по «долларовой гегемонии»</a>
+											</h3>
+											<p>Европа заплатила высокую цену за ухудшение ситуации с безопасностью вокруг
+												неё,
+												в то время как...</p>
+										</div>
+
+										<div class="news-block__item">
+											<div class="meta news-block__meta">
+												<span class="data meta__item">13.04.2023 | <a href="#">игорь логинов</a>
+												</span>
+											</div>
+											<h3 class="news-block__header"><a href="#">Специальная военная операция
+													ВС РФ и события
+													на Украине 9 февраля, день</a></h3>
+											<p>ЧВК «Вагнер» в течение дня вели активные штурмовые действия на северо-востоке
+												Артёмовска...</p>
+										</div>
+
+										<div class="news-block__item">
+											<div class="meta news-block__meta">
+												<span class="data meta__item">13.04.2023 | <a href="#">игорь логинов</a>
+												</span>
+											</div>
+											<h3 class="news-block__header"><a href="#">Аусвайсы для европейцев в Латвии —
+													законодательная инициатива бьёт ключом</a></h3>
+											<p>Депутат латвийского сейма от партии национального объединения "Всё для Латвии!
+												—...
+											</p>
+										</div>
+
+										<hr>
+
+										<ul class="news-block__list">
+											<li>
+												<a href="#">China Daily: Евросоюзу следовало бы шире оценивать последствия
+													своих
+													действий</a>
+											</li>
+											<li>
+												<a href="#">Сеймур Херш: «Северный поток» подорвали диверсанты из США
+													и Норвегии</a>
+											</li>
+											<li>
+												<a href="#">Глава офиса президента создаёт свою армию?</a>
+											</li>
+											<li>
+												<a href="#">Специальная военная операция ВС РФ и события на Украине 8 февраля,
+													день</a>
+											</li>
+											<li>
+												<a href="#">Евросоюз вгоняет Молдавию в долги и накачивает оружием</a>
+											</li>
+											<li>
+												<a href="#">Эстония наелась украинского</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
 
 							<!-- subscribe-form -->
 							<form action="/" method="post" class="ss-form aside-item">
@@ -281,7 +553,8 @@
 							<!-- /subscribe-form -->
 
 							<div class="ss-social aside-item">
-								<h3 class="ss-social__header">Подпишитесь на нас и будьте <br> всегда в курсе событий!</h3>
+								<h3 class="ss-social__header">Подпишитесь на нас и будьте <br> всегда в курсе событий!
+								</h3>
 								<div class="ss-social__wrapper">
 									<a class="ss-social__link" href="https://twitter.com/fondsk" target="_blank" title="Твиттер">
 										<img src="icons/sidebar/twitter.svg" alt="twitter">
@@ -302,7 +575,6 @@
 								</div>
 							</div>
 						</aside>
-
 					</div>
 				</div>
 			</div>
@@ -469,6 +741,7 @@
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="js/libs/slick.min.js"></script>
 	<script src="js/script.js"></script>

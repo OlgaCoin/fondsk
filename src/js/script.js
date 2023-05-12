@@ -121,6 +121,54 @@ $(document).ready(function () {
 		change_size(par, 'plus');
 	});
 
+
+	//  Локализация datepicker 
+
+	$.datepicker.regional['ru'] = {
+		closeText: 'Закрыть',
+		prevText: 'Назад',
+		nextText: 'Вперед',
+		currentText: 'Сегодня',
+		monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+		monthNamesShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+		dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
+		dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
+		dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+		weekHeader: 'Не',
+		dateFormat: 'dd.mm.yy',
+		firstDay: 1,
+		isRTL: false,
+		showMonthAfterYear: false,
+		yearSuffix: ''
+	};
+	$.datepicker.setDefaults($.datepicker.regional['ru']);
+
+
+	$(".datepick-from").datepicker({
+		showOn: "button",
+		buttonImage: "icons/category/calendar.svg",
+		buttonImageOnly: true,
+		buttonText: "Выбрать дату",
+		maxDate: new Date,
+		onSelect: function (dateText, inst) {
+			var theDate = new Date(Date.parse($(this).datepicker('getDate')));
+			var dateFormatted = $.datepicker.formatDate('dd.mm.yy', theDate);
+			$(".date-from").text(dateFormatted);
+		},
+	});
+	$(".datepick-to").datepicker({
+		showOn: "button",
+		buttonImage: "icons/category/calendar.svg",
+		buttonImageOnly: true,
+		buttonText: "Выбрать дату",
+		maxDate: new Date,
+		onSelect: function (dateText, inst) {
+			var theDate = new Date(Date.parse($(this).datepicker('getDate')));
+			var dateFormatted = $.datepicker.formatDate('dd.mm.yy', theDate);
+			$(".date-to").text(dateFormatted);
+		},
+	});
+
 });
 
 
