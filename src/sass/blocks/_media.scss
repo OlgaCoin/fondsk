@@ -463,6 +463,11 @@
 			line-height: 38px;
 		}
 	}
+	.date-range {
+		& > span {
+			font-size: 13px;
+		}
+	}
 	.abc {
 		padding-bottom: 0;
 		&__list {
@@ -486,6 +491,14 @@
 				&:before {
 					display: none;
 				}
+			}
+		}
+	}
+	.contacts-form {
+		&__item {
+			&:after {
+				right: -6px;
+				top: -18px;
 			}
 		}
 	}
