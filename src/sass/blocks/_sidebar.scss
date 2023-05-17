@@ -3,7 +3,7 @@
 	margin-bottom: 50px;
 	& p {
 		font-size: 15px;
-		line-height: 22px;
+		line-height: 24px;
 	}
 }
 .ss-social {
@@ -33,5 +33,14 @@
 			width: 52px;
 			height: 52px;
 		}
+	}
+}
+.top-news__label-link {
+	padding: 0 19px;
+	&:after {
+		display: none;
+	}
+	&:hover {
+		opacity: 1;
 	}
 }

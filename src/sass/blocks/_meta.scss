@@ -44,15 +44,19 @@
 	}
 	&__img {
 		display: block;
-		border-radius: $radius;
+		border-radius: 50%;
 		&--left {
 			height: 56px;
 			width: 56px;
 			margin-right: 26px;
+			min-width: 56px;
+			object-fit: cover;
 		}
 		&--right {
 			width: 80px;
 			height: 80px;
+			object-fit: cover;
+			min-width: 80px;
 		}
 	}
 	&--mb {

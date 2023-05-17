@@ -1,6 +1,11 @@
 .article {
 	p {
 		margin-bottom: 38px;
+		&>img {
+			width: 100%;
+			object-fit: cover;
+			margin-bottom: 15px;
+		}
 	}
 	&__top {
 		margin-bottom: 40px;
@@ -105,6 +110,10 @@
 		line-height: 29px;
 		color: #383838;
 		padding: 45px 8%;
+		& > P {
+			margin: 0;
+			font-weight: 700;
+		}
 		&--hor {
 			&:before, &:after {
 				content: '';
