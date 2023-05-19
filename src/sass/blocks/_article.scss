@@ -32,9 +32,11 @@
 		margin-bottom: 20px;
 		overflow: hidden;
 		border-radius: $radius_sm;
-		width: 100%;
-		max-width: 100%;
-		height: auto;
+		& > img {
+			width: 100%;
+			max-width: 100%;
+			height: auto;
+		}
 	}
 	&__views {
 		position: absolute;
