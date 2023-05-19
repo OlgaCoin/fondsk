@@ -1,10 +1,27 @@
 .article {
 	p {
 		margin-bottom: 38px;
-		&>img {
+		& > img {
 			width: 100%;
-			object-fit: cover;
-			margin-bottom: 15px;
+			height: auto;
+		}
+		&.img--caption {
+			@include caption;
+			& > img {
+				margin-bottom: 15px;
+			}
+		}
+		&.img--left {
+			margin-left: -110px;
+			margin-right: 65px;
+			width: 50%;
+			float: left;
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
+		&.img--left-full {
+			margin-left: -110px;
+			width: calc(100% + 110px);
 		}
 	}
 	&__top {
@@ -15,14 +32,9 @@
 		margin-bottom: 20px;
 		overflow: hidden;
 		border-radius: $radius_sm;
-		& > img {
-			width: 100%;
-			max-width: 100%;
-			height: auto;
-		}
-		&--left {
-			width: 100%;
-		}
+		width: 100%;
+		max-width: 100%;
+		height: auto;
 	}
 	&__views {
 		position: absolute;
@@ -91,56 +103,49 @@
 			margin-left: -110px;
 			width: calc(100% + 110px);
 		}
-		&--left {
-			margin-left: -110px;
-			margin-right: 65px;
-			width: 50%;
-			float: left;
-			margin-top: 0;
-			margin-bottom: 20px;
-		}
 	}
 	&__caption {
 		@include caption;
 	}
-	&__quote {
-		position: relative;
-		font-weight: 700;
-		font-size: 20px;
-		line-height: 29px;
-		color: #383838;
-		padding: 45px 8%;
+	&__quote--hor, &__quote--vert {
+		margin: 55px 0 50px;
+		position: relative;	
+		padding: 45px 8%;	
 		& > P {
 			margin: 0;
 			font-weight: 700;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 29px;
+			color: #383838;
+		}		
+	}
+	&__quote--hor {
+		&:before, &:after {
+			content: '';
+			background: url('../img/article/pattern.png') left bottom repeat-x;
+			height: 13px;
+			width: 100%;
+			position: absolute;
+			left: 0;
 		}
-		&--hor {
-			&:before, &:after {
-				content: '';
-				background: url('../img/article/pattern.png') left bottom repeat-x;
-				height: 13px;
-				width: 100%;
-				position: absolute;
-				left: 0;
-			}
-			&:before {
-				top: 0;
-			}
-			&:after {
-				bottom: 0;
-			}
+		&:before {
+			top: 0;
 		}
-		&--vert {
-			padding: 30px 6%;
-			&:before {
-				content: '';
-				background: url('../img/article/patternv.png') bottom left repeat-y;
-				width: 8px;
-				height: 100%;
-				position: absolute;
-				left: 0;
-				bottom: 0;
-			}
+		&:after {
+			bottom: 0;
+		}
+	}
+	&__quote--vert {
+		padding: 30px 6%;
+		&:before {
+			content: '';
+			background: url('../img/article/patternv.png') bottom left repeat-y;
+			width: 8px;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			bottom: 0;
 		}
 	}
 	&__link {
