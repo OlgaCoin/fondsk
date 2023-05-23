@@ -45,8 +45,16 @@
 	display: flex;
 	justify-content: end;
 }
-.page__search--fw {
+.page__search {
+	& .search-form {
+		&__submit {
+			background: url('../icons/search.svg') no-repeat right #fff;
+			right: 16px;
+		}
+	}
+	&--fw {
 	display: block;
+	}
 }
 .footer__search {
 	& .search-form {
