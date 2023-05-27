@@ -65,3 +65,22 @@
 	height: 11px;
 	}
 }
+.author-info {
+	margin-bottom: 25px;
+	display: flex;
+	justify-content: flex-start;
+	&__img {		
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		-o-object-fit: cover;
+		object-fit: cover;
+		margin-right: 30px;
+	}
+	&__descr {
+		& p {
+			font-size: 15px;
+			line-height: 24px;
+		}
+	}
+}

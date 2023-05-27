@@ -23,7 +23,7 @@
 
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.min.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 
 </head>
@@ -257,258 +257,260 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-8 col-lg-8">
-						<div class="page__top">
+						<h1 class="page__title">Валерий БУРТ</h1>
 
-							<div class="row">
 
-								<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-									<h1 class="page__title">Наши авторы</h1>
-								</div>
-								<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-									<div class="page__search search">
-										<form class="search-form" action="/search" method="get">
-											<input type="text" placeholder="Фамилия" class="search-form__input" name="q">
-											<input type="submit" class="search-form__submit" value="">
-										</form>
-									</div>
-								</div>
-							</div>
-
-							<div class="filter-block abc">
-								<div class="abc__list">
-									<a href="#" class="abc__item active">А</a>
-									<a href="#" class="abc__item">Б</a>
-									<a href="#" class="abc__item">В</a>
-									<a href="#" class="abc__item">Г</a>
-									<a href="#" class="abc__item">Д</a>
-									<a href="#" class="abc__item">Е</a>
-									<a href="#" class="abc__item">Ж</a>
-									<a href="#" class="abc__item">З</a>
-									<a href="#" class="abc__item">И</a>
-									<a href="#" class="abc__item">К</a>
-									<a href="#" class="abc__item">Л</a>
-									<a href="#" class="abc__item">М</a>
-									<a href="#" class="abc__item">Н</a>
-									<a href="#" class="abc__item">О</a>
-									<a href="#" class="abc__item">П</a>
-									<a href="#" class="abc__item">Р</a>
-									<a href="#" class="abc__item">С</a>
-									<a href="#" class="abc__item">Т</a>
-									<a href="#" class="abc__item">У</a>
-									<a href="#" class="abc__item">Ф</a>
-									<a href="#" class="abc__item">Х</a>
-									<a href="#" class="abc__item">Ц</a>
-									<a href="#" class="abc__item">Ч</a>
-									<a href="#" class="abc__item">Ш</a>
-									<a href="#" class="abc__item">Щ</a>
-									<a href="#" class="abc__item">Ю</a>
-									<a href="#" class="abc__item">Я</a>
-								</div>
+						<!-- новая разметка здесь -->
+						<div class="author-info">
+							<img src="img/author.jpg" alt="Фото" class="author-info__img">
+							<div class="author-info__descr">
+								<p>Валерий БУРТ — журналист, историк. Автор книг «Москва, 1941 год. Жизнь и быт москвичей в годы
+									великой войны», «И жизнь, и вещи, и еда. Словесный памятник минувшей эпохи».</p>
+								<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Строчка живет, букв они родного знаках пустился над! Большого переулка грамматики, своего меня прямо свой пунктуация пор заманивший взгляд коварных.</p>
 							</div>
 						</div>
+						<!-- /новая разметка здесь -->
+						
+
+						<!-- datepicker -->
+						<div class="page__top">
+							<form action="/" method="post">
+								<fieldset>
+									<div class="filter-block">
+										<input type="date" name="filter[date_from]" value="" class="form-date"
+											title="Выберите начало периода">
+										<input type="date" name="filter[date_to]" value="" class="form-date"
+											title="Выберите окончание периода">
+										<input class="btn btn--sm" type="submit" value="Ok">
+									</div>
+								</fieldset>
+							</form>
+						</div>
+						<!-- /datepicker -->
 
 						<div class="page__content">
-
-							<div class="author-block">
-								<div class="author-block__top">
-									<h2 class="author-block__title">Андрей Арешев</h2>
-									<div class="all-link">
-										<a href="#">Все статьи автора</a>|<span>128</span>
+							<div class="row">
+								<div class="col-xl-12">
+									<!-- article -->
+									<div class="col-xl-12 col-lg-12">
+										<article class="news-feed__item news-feed__item">
+											<a href="#" class="news-feed__img news-feed__img--first">
+												<img src="img/news_cards/card.jpg" alt="photo">
+											</a>
+											<div class="meta news-feed__meta">
+												<div class="label">актуально</div>
+												<span class="data meta__item">07.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+											</div>
+											<h2 class="news-feed__header">
+												<a href="#">Клан Бжезинских видит в Украине новый «Афганистан для русских»</a>
+											</h2>
+											<p class="news-feed__descr">Теперь Линн Трейси работает в унисон с послом США в Польше
+												Марком
+												Бжезинским — сыном бывшего...</p>
+										</article>
 									</div>
+									<!-- /article -->
 								</div>
-								<div class="author-block__content">
-									<img src="img/authors/1.jpg" alt="Фото" class="author-block__img">
-									<a href="#">Посольство США в Армении — кузница кадров и рассадник русофобии</a>
-									<a href="#">Удивляться ли блокировке параллельного импорта из Турции в Россию?</a>
+
+								<!-- article -->
+								<div class="col-xl-6 col-lg-6 col-md-6">
+									<article class="news-feed__item">
+										<a href="#" class="news-feed__img">
+											<img src="img/news_cards/card-1.jpg" alt="photo">
+										</a>
+										<div class="meta news-feed__meta">
+											<div class="label">актуально</div>
+											<span class="data meta__item">07.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+										</div>
+										<h2 class="news-feed__header">
+											<a href="#">Китай показал миру, что Америка вздрогнула</a>
+										</h2>
+										<p class="news-feed__descr">Уничтожение аэростата показывали в прямом эфире
+											по американскому
+											телевидению. Правда,...</p>
+									</article>
 								</div>
+								<!-- /article -->
+
+								<!-- article -->
+								<div class="col-xl-6 col-lg-6 col-md-6">
+									<article class="news-feed__item">
+										<a href="#" class="news-feed__img">
+											<img src="img/news_cards/card-2.jpg" alt="photo">
+										</a>
+										<div class="meta news-feed__meta">
+											<div class="label">актуально</div>
+											<span class="data meta__item">07.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+										</div>
+										<h2 class="news-feed__header">
+											<a href="#">Головокружительный скандал в Евросоюзе</a>
+										</h2>
+										<p class="news-feed__descr">Уничтожение аэростата показывали в прямом эфире
+											по американскому
+											телевидению. Правда,...</p>
+									</article>
+								</div>
+								<!-- /article -->
+
+								<!-- article -->
+								<div class="col-xl-6 col-lg-6 col-md-6">
+									<article class="news-feed__item">
+										<a href="#" class="news-feed__img">
+											<img src="img/news_cards/card-3.jpg" alt="photo">
+										</a>
+										<div class="meta news-feed__meta">
+											<div class="label">актуально</div>
+											<span class="data meta__item">07.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+										</div>
+										<h2 class="news-feed__header">
+											<a href="#">Внешняя торговля России вернулась на уровень до 24 февраля 2022 года</a>
+										</h2>
+										<p class="news-feed__descr">Российская внешняя торговля преодолела санкции коллективного
+											Запада, её месячные обороты вышли на уровень начала...</p>
+									</article>
+								</div>
+								<!-- /article -->
+
+								<!-- article -->
+								<div class="col-xl-6 col-lg-6 col-md-6">
+									<article class="news-feed__item">
+										<a href="#" class="news-feed__img">
+											<img src="img/news_cards/card-4.jpg" alt="photo">
+										</a>
+										<div class="meta news-feed__meta">
+											<div class="label">актуально</div>
+											<span class="data meta__item">07.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+										</div>
+										<h2 class="news-feed__header">
+											<a href="#">О подоплеке скандала в Рамштайне</a>
+										</h2>
+										<p class="news-feed__descr">Разногласия между западными военными и политиками в отношении
+											помощи Украине расшатывают фундамент НАТО...</p>
+									</article>
+								</div>
+								<!-- /article -->
+
+								<!-- article -->
+								<div class="col-xl-6 col-lg-6 col-md-6">
+									<article class="news-feed__item">
+										<a href="#" class="news-feed__img">
+											<img src="img/news_cards/card-5.jpg" alt="photo">
+										</a>
+										<div class="meta news-feed__meta">
+											<span class="data meta__item">07.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+										</div>
+										<h2 class="news-feed__header">
+											<a href="#">Странные враги, торговля между которыми бурно растёт</a>
+										</h2>
+										<p class="news-feed__descr">Согласно данным, опубликованным 7 февраля Министерством
+											торговли
+											США, двусторонняя торговля...</p>
+									</article>
+								</div>
+								<!-- /article -->
+
+								<!-- article -->
+								<div class="col-xl-6 col-lg-6 col-md-6">
+									<article class="news-feed__item">
+										<a href="#" class="news-feed__img">
+											<img src="img/news_cards/card-6.jpg" alt="photo">
+										</a>
+										<div class="meta news-feed__meta">
+											<span class="data meta__item">07.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+										</div>
+										<h2 class="news-feed__header">
+											<a href="#">Вишеградская группа в состоянии полураспада</a>
+										</h2>
+										<p class="news-feed__descr">Вишеградская «четвёрка» как механизм коллективного
+											сотрудничества
+											стран Центральной и...</p>
+									</article>
+								</div>
+								<!-- /article -->
+
+								<!-- article -->
+								<div class="col-xl-6 col-lg-6 col-md-6">
+									<article class="news-feed__item">
+										<a href="#" class="news-feed__img">
+											<img src="img/news_cards/card-7.jpg" alt="photo">
+										</a>
+										<div class="meta news-feed__meta">
+											<span class="data meta__item">07.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+										</div>
+										<h2 class="news-feed__header">
+											<a href="#">На Западе колеблются: свернуть проект «Украина» или подморозить?</a>
+										</h2>
+										<p class="news-feed__descr">Так или иначе, смена акцентов в комментариях западных
+											аналитиков
+											налицо. Она свидетельствует о...</p>
+									</article>
+								</div>
+								<!-- /article -->
+
+								<!-- article -->
+								<div class="col-xl-6 col-lg-6 col-md-6">
+									<article class="news-feed__item">
+										<a href="#" class="news-feed__img">
+											<img src="img/news_cards/card.jpg" alt="photo">
+										</a>
+										<div class="meta news-feed__meta">
+											<span class="data meta__item">07.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+										</div>
+										<h2 class="news-feed__header">
+											<a href="#">Головокружительный скандал в Евросоюзе</a>
+										</h2>
+										<p class="news-feed__descr">Уничтожение аэростата показывали в прямом эфире
+											по американскому
+											телевидению. Правда,...</p>
+									</article>
+								</div>
+								<!-- /article -->
+
+								<!-- article -->
+								<div class="col-xl-6 col-lg-6 col-md-6">
+									<article class="news-feed__item">
+										<a href="#" class="news-feed__img">
+											<img src="img/news_cards/card-1.jpg" alt="photo">
+										</a>
+										<div class="meta news-feed__meta">
+											<span class="data meta__item">07.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+										</div>
+										<h2 class="news-feed__header">
+											<a href="#">Китай показал миру, что Америка вздрогнула</a>
+										</h2>
+										<p class="news-feed__descr">Уничтожение аэростата показывали в прямом эфире
+											по американскому
+											телевидению. Правда,...</p>
+									</article>
+								</div>
+								<!-- /article -->
+
+								<!-- article -->
+								<div class="col-xl-6 col-lg-6 col-md-6">
+									<article class="news-feed__item">
+										<a href="#" class="news-feed__img">
+											<img src="img/news_cards/card-2.jpg" alt="photo">
+										</a>
+										<div class="meta news-feed__meta">
+											<span class="data meta__item">07.02.2023 | <a href="#">АРТЁМ ИГНАТЬЕВ</a> </span>
+										</div>
+										<h2 class="news-feed__header">
+											<a href="#">Головокружительный скандал в Евросоюзе</a>
+										</h2>
+										<p class="news-feed__descr">Уничтожение аэростата показывали в прямом эфире
+											по американскому
+											телевидению. Правда,...</p>
+									</article>
+								</div>
+								<!-- /article -->
+
+								<!-- load more -->
+								<div class="load-more">
+									<a href=" #" class="load-more__btn">читать еще</a>
+								</div>
+								<!-- /load more -->
+
 							</div>
-
-							<div class="author-block">
-								<div class="author-block__top">
-									<h2 class="author-block__title">Владимир Артамонов</h2>
-									<div class="all-link">
-										<a href="#">Все статьи автора</a>|<span>1</span>
-									</div>
-								</div>
-								<div class="author-block__content">
-									<img src="img/authors/2.jpg" alt="Фото" class="author-block__img">
-									<a href="#">Вермахт и Красная Армия: противоборство духа</a>
-								</div>
-							</div>
-
-							<div class="author-block">
-								<div class="author-block__top">
-									<h2 class="author-block__title">Агарон Айвазян</h2>
-									<div class="all-link">
-										<a href="#">Все статьи автора</a>|<span>1</span>
-									</div>
-								</div>
-								<div class="author-block__content">
-									<img src="img/placeholder.svg" alt="Фото" class="author-block__img">
-									<a href="#">О положении Армении в современном мире</a>
-								</div>
-							</div>
-
-							<div class="author-block">
-								<div class="author-block__top">
-									<h2 class="author-block__title">Драгомир Анджелкович</h2>
-									<div class="all-link">
-										<a href="#">Все статьи автора</a>|<span>32</span>
-									</div>
-								</div>
-								<div class="author-block__content">
-									<img src="img/authors/3.jpg" alt="Фото" class="author-block__img">
-									<a href="#">Вермахт и Красная Армия: противоборство духа</a>
-									<a href="#">Новая антирусская кампания на Балканах (I)</a>
-								</div>
-							</div>
-
-							<div class="author-block">
-								<div class="author-block__top">
-									<h2 class="author-block__title">Вардан Багдасарян</h2>
-									<div class="all-link">
-										<a href="#">Все статьи автора</a>|<span>2</span>
-									</div>
-								</div>
-								<div class="author-block__content">
-									<img src="img/authors/4.jpg" alt="Фото" class="author-block__img">
-									<a href="#">Стратегия национальной безопасности США 2022 года — публично заявленный план установления мирового господства</a>
-									<a href="#">Удивляться ли блокировке параллельного импорта из Турции в Россию?</a>
-								</div>
-							</div>
-
-							<div class="author-block">
-								<div class="author-block__top">
-									<h2 class="author-block__title">Антон Бредихин</h2>
-									<div class="all-link">
-										<a href="#">Все статьи автора</a>|<span>1</span>
-									</div>
-								</div>
-								<div class="author-block__content">
-									<img src="img/authors/5.jpg" alt="Фото" class="author-block__img">
-									<a href="#">Украина и Таможенный союз: региональный ответ</a>
-								</div>
-							</div>
-
-							<div class="author-block">
-								<div class="author-block__top">
-									<h2 class="author-block__title">Елена Буевич</h2>
-									<div class="all-link">
-										<a href="#">Все статьи автора</a>|<span>3</span>
-									</div>
-								</div>
-								<div class="author-block__content">
-									<img src="img/authors/6.jpg" alt="Фото" class="author-block__img">
-									<a href="#">Спасти от смерти русских братьев...</a>
-									<a href="#">Эра «милосердия» и балканский вопрос</a>
-								</div>
-							</div>
-
-							<div class="author-block">
-								<div class="author-block__top">
-									<h2 class="author-block__title">Андрей Арешев</h2>
-									<div class="all-link">
-										<a href="#">Все статьи автора</a>|<span>128</span>
-									</div>
-								</div>
-								<div class="author-block__content">
-									<img src="img/authors/1.jpg" alt="Фото" class="author-block__img">
-									<a href="#">Посольство США в Армении — кузница кадров и рассадник русофобии</a>
-									<a href="#">Удивляться ли блокировке параллельного импорта из Турции в Россию?</a>
-								</div>
-							</div>
-
-							<div class="author-block">
-								<div class="author-block__top">
-									<h2 class="author-block__title">Владимир Артамонов</h2>
-									<div class="all-link">
-										<a href="#">Все статьи автора</a>|<span>1</span>
-									</div>
-								</div>
-								<div class="author-block__content">
-									<img src="img/authors/2.jpg" alt="Фото" class="author-block__img">
-									<a href="#">Вермахт и Красная Армия: противоборство духа</a>
-								</div>
-							</div>
-
-							<div class="author-block">
-								<div class="author-block__top">
-									<h2 class="author-block__title">Агарон Айвазян</h2>
-									<div class="all-link">
-										<a href="#">Все статьи автора</a>|<span>1</span>
-									</div>
-								</div>
-								<div class="author-block__content">
-									<img src="img/placeholder.svg" alt="Фото" class="author-block__img">
-									<a href="#">О положении Армении в современном мире</a>
-								</div>
-							</div>
-
-							<div class="author-block">
-								<div class="author-block__top">
-									<h2 class="author-block__title">Драгомир Анджелкович</h2>
-									<div class="all-link">
-										<a href="#">Все статьи автора</a>|<span>32</span>
-									</div>
-								</div>
-								<div class="author-block__content">
-									<img src="img/authors/3.jpg" alt="Фото" class="author-block__img">
-									<a href="#">Вермахт и Красная Армия: противоборство духа</a>
-									<a href="#">Новая антирусская кампания на Балканах (I)</a>
-								</div>
-							</div>
-
-							<div class="author-block">
-								<div class="author-block__top">
-									<h2 class="author-block__title">Вардан Багдасарян</h2>
-									<div class="all-link">
-										<a href="#">Все статьи автора</a>|<span>2</span>
-									</div>
-								</div>
-								<div class="author-block__content">
-									<img src="img/authors/4.jpg" alt="Фото" class="author-block__img">
-									<a href="#">Стратегия национальной безопасности США 2022 года — публично заявленный план установления мирового господства</a>
-									<a href="#">Удивляться ли блокировке параллельного импорта из Турции в Россию?</a>
-								</div>
-							</div>
-
-							<div class="author-block">
-								<div class="author-block__top">
-									<h2 class="author-block__title">Антон Бредихин</h2>
-									<div class="all-link">
-										<a href="#">Все статьи автора</a>|<span>1</span>
-									</div>
-								</div>
-								<div class="author-block__content">
-									<img src="img/authors/5.jpg" alt="Фото" class="author-block__img">
-									<a href="#">Украина и Таможенный союз: региональный ответ</a>
-								</div>
-							</div>
-
-							<div class="author-block">
-								<div class="author-block__top">
-									<h2 class="author-block__title">Елена Буевич</h2>
-									<div class="all-link">
-										<a href="#">Все статьи автора</a>|<span>3</span>
-									</div>
-								</div>
-								<div class="author-block__content">
-									<img src="img/authors/6.jpg" alt="Фото" class="author-block__img">
-									<a href="#">Спасти от смерти русских братьев...</a>
-									<a href="#">Эра «милосердия» и балканский вопрос</a>
-								</div>
-							</div>
-
-							<nav class="paginator">
-								<a href="#" class="paginator__item active">1</a>
-								<a href="#" class="paginator__item">2</a>
-								<a href="#" class="paginator__item">3</a>
-								<a href="#" class="paginator__item">4</a>
-								<a href="#" class="paginator__item">...</a>
-								<a href="#" class="paginator__item">последняя</a>
-							</nav>
-
-
 						</div>
 					</div>
 

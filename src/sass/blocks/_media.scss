@@ -314,7 +314,8 @@
 	}
 	.filter-block {
 		flex-wrap: wrap;
-		& select {
+		// удалить второй селектор /////////////////
+		& select, & input[type=date] {
 			margin-bottom: 15px;
 		}
 	}
