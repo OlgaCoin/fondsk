@@ -98,10 +98,10 @@
 		& > p.article__caption {			
 			font-size: 13px;
 		}	
-		& .article-list {
+		& ol, & ul {
 			padding-left: 40px;
 		}
-		& ol.article-list {
+		& ol {
 			counter-reset: li;
 			&>li {
 				list-style-type: none;
@@ -121,7 +121,7 @@
 				}
 			}
 		}	
-		& ul.article-list {
+		& ul {
 			&>li {
 				position: relative;
 				margin-bottom: 24px;
