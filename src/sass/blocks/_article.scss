@@ -243,14 +243,14 @@
 			border-radius: $radius_sm;
 			overflow: hidden;
 			margin-right: 24px;
-			max-width: 154px;
-			width: 100%;
 			height: auto;
+			min-width: 153px;
 			& img {
 				display: block;
-				height: auto;
 				width: 100%;
 				transition: all 0.8s linear;
+				height: 96px;
+				object-fit: cover;
 				&:hover {					
 				transform:scale(1.1);
 				}

@@ -32,7 +32,7 @@ $(document).ready(function () {
 
 	$(window).scroll(function () {
 
-		if ($(this).scrollTop() >= 60) {
+		if ($(this).scrollTop() >= 155) {
 			$('.header__nav').addClass('fixed');
 		} else {
 			$('.header__nav').removeClass('fixed');
