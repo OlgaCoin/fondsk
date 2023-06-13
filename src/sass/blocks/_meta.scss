@@ -103,8 +103,8 @@
 	// 	}
 	// }
 	&--orange {
-		// border-color: $orange;
-		border: none;
+		border-radius: 3px;
+		border: 1px solid $yellow;
 		color: $orange;
 		position: relative;
 		padding: 0 22px 0 8px;
