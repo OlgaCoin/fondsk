@@ -247,7 +247,7 @@
 			min-width: 153px;
 			& img {
 				display: block;
-				width: 100%;
+				min-width: 100%;
 				transition: all 0.8s linear;
 				height: 96px;
 				object-fit: cover;
