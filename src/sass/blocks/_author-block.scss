@@ -16,6 +16,14 @@
 		margin-right: 30px;
 		margin-bottom: 20px;
 	}
+	&__title {
+		& > a {
+			transition: $trans;
+			&:hover {
+				color: $primary;
+			}
+		}
+	}
 	&__content {
 		& a {
 			display: block;
