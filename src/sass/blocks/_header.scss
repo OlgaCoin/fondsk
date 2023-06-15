@@ -50,7 +50,13 @@
 		& > li:hover {
 			& .header__submenu {
 				opacity: .9;
-				visibility: visible;
+				// visibility: visible;
+				height: auto;
+
+				min-height: 100px;
+				padding: 44px 0 10px;
+				border-top: 2px solid $outline;
+				
 				margin-top: 0px;
 			}
 			a.header__menu-item {
@@ -59,20 +65,27 @@
 		}
 	}
 	&__submenu {
-		position: absolute;
+		transition: opacity .5s ease-out, margin-top .3s ease-in-out, height .5s ease-out;
 		opacity: 0;
-		visibility: hidden;
+		height: 0;
+
+		overflow: hidden;
+		padding: 0;
+
+		position: absolute;
+		// opacity: 0;
+		// visibility: hidden;
 		width: 100vw;
-		padding: 44px 0 10px;
-		margin-top: 30px;
+		// padding: 44px 0 10px;
+		margin-top: 20px;
 		top: 100%;
 		left: 0;
 		z-index: 1;
-		min-height: 100px;
+		// min-height: 100px;
 		background-color: $white;
 		box-shadow: $shadow;
-		border-top: 2px solid $outline;
-		transition: all 0.2s ease-in-out;
+		// border-top: 2px solid $outline;
+		// transition: all 0.2s ease-in-out;
 		& ul {
 			& li {
 				height: 64px;
