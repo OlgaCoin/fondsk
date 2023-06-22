@@ -12,18 +12,57 @@
 		margin-bottom: 15px;
 	}
 }
-.form-actions {
-	display: flex;
-	flex-direction: column;
-	justify-content: start;
-	align-items: center;
-}
 .messages--status {
 	display: none;
 }
 .poll {
 	& legend {
 		display: none;
+	}
+	& .form-actions {
+		display: none;
+	}
+	& .vote-form .form-actions {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+		& input[type='submit']:nth-child(1) {		
+			width: 217px;
+			height: 60px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: $primary;
+			border: none;
+			border-radius: 8px;
+			outline: none;
+			@include link-caps;
+			font-weight: 600;
+			color: $white;
+			transition: $trans;
+			margin-bottom: 20px;
+			&:hover {
+				background-color: darken($primary, 7%);
+				box-shadow: 0px 4px 20px 2px rgba(241, 93, 96, 0.5);
+				color: $white;
+			}
+			&:active {
+				background-color: #B1292B;
+			}
+		}
+		& input[type='submit']:nth-child(2) {
+			display: block;
+			@include link-caps-sm;
+			border: none;
+			outline: none;
+			background: $white;
+			transition: $trans;
+			@include link-caps-sm;
+			&:hover {
+				color: $primary;
+			}
+		}
 	}
 	&-question {
 		margin-bottom: 30px;
@@ -101,44 +140,5 @@
 			cursor: pointer;
 			transition: $trans;
 		}	
-	}
-	& input[type='submit'] {
-		display: none;
-	}
-	& .vote-form input[type='submit']#edit-vote {		
-		width: 217px;
-		height: 60px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background-color: $primary;
-		border: none;
-		border-radius: 8px;
-		outline: none;
-		@include link-caps;
-		font-weight: 600;
-		color: $white;
-		transition: $trans;
-		margin-bottom: 20px;
-		&:hover {
-			background-color: darken($primary, 7%);
-			box-shadow: 0px 4px 20px 2px rgba(241, 93, 96, 0.5);
-			color: $white;
-		}
-		&:active {
-			background-color: #B1292B;
-		}
-	}
-	& .vote-form input[type='submit']#edit-result {
-		display: block;
-		@include link-caps-sm;
-		border: none;
-		outline: none;
-		background: $white;
-		transition: $trans;
-		@include link-caps-sm;
-		&:hover {
-			color: $primary;
-		}
 	}
 }
