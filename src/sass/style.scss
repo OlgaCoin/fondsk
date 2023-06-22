@@ -47,6 +47,7 @@ ul {
 hr {
 	margin-bottom: 25px;
 	border-top: 1px solid $outline;
+	color: $outline;
 }
 p {
 	font-family: $f_serif;
@@ -91,6 +92,7 @@ strong {
 @import "blocks/meta";
 @import "blocks/news-block";
 @import "blocks/news-feed";
+@import "blocks/poll";
 @import "blocks/banners";
 @import "blocks/load-more";
 @import "blocks/footer";
