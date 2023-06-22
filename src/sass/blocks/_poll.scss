@@ -102,8 +102,10 @@
 			transition: $trans;
 		}	
 	}
-
-	& input[type='submit']#edit-vote {
+	& input[type='submit'] {
+		display: none;
+	}
+	& .vote-form input[type='submit']#edit-vote {		
 		width: 217px;
 		height: 60px;
 		display: flex;
@@ -127,7 +129,8 @@
 			background-color: #B1292B;
 		}
 	}
-	& input[type='submit']#edit-result {
+	& .vote-form input[type='submit']#edit-result {
+		display: block;
 		@include link-caps-sm;
 		border: none;
 		outline: none;
