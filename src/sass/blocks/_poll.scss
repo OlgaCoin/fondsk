@@ -99,6 +99,9 @@
 }
 .form-actions {
 	display: none;
+	& input[type='submit'] {
+		display: none;
+	}
 }
 .vote-form .form-actions {
 	display: flex;
