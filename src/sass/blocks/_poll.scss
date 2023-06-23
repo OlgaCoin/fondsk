@@ -11,6 +11,24 @@
 	& .meta {
 		margin-bottom: 15px;
 	}
+	& .messages-list {
+		margin-top: 0;
+		margin-bottom: 0;
+		& .messages__header {
+			& h2 {
+				font-size: 20px;
+				line-height: 26;
+			}
+		}
+		& .messages__content {
+			margin-left: 0;
+			font-size: 15px;
+			line-height: 23;
+		}
+		& .messages--error {
+			margin-top: 0;
+		}
+	}
 }
 .messages--status {
 	display: none;
@@ -21,6 +39,12 @@
 	}
 	&-question {
 		margin-bottom: 30px;
+	}
+	& .vote-form {
+		text-align: center;
+		& h3 {
+			text-align: center;
+		}
 	}
 	& .form-wrapper {
 		text-align: left;		
