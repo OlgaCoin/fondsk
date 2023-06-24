@@ -28,10 +28,10 @@
 		& .messages--error {
 			margin-top: 0;
 		}
+		& .messages--status {
+			display: none;
+		}
 	}
-}
-.messages--status {
-	display: none;
 }
 .poll {
 	& legend {
